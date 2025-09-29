@@ -1,0 +1,478 @@
+HTML-: Hyper Text Markup Language
+- this language is used to create and design web pages
+- it is combination of Hyper Text and Markup Language
+- Hyper Text is define the link between the web pages, 
+	- refers to the way in which Web pages (HTML documents) are linked together.
+- Markup Language is used define text within a tag
+	- Markup Language which means you use HTML to simply "mark-up" a text document with tags that tell a Web browser how to structure it to display.
+- Web Page: 
+	- A web page is a document which is commonly written in HTML and translated by a web browser.
+	- A Web page can be of the static or dynamic type. 
+	- with the help of HTML we can create only static web pages.
+-: 
+1. easy to learn
+	- It is easy to learn and easy to use.
+2. Offline support 
+	- HTML pages once loaded can be made available offline on the machine without any need of internet.
+3. Web page Structure
+	- it is used to create a structure of web page 
+4. It is platform-independent.
+	- platform - web browser 
+5. You can create a static website by using HTML only.
+
+-: Editor or IDE
+1. NotePad
+2. NotePad++
+3. Sublime
+4. Context
+5. VSCode
+
+-: extension 
+*.java
+*.class
+*.html
+
+
+-: 
+<!DOCTYPE html>
+<html>//root tag 
+   <head>
+      <title>This is document title</title>
+	  <meta> <script> <link> <style>
+   </head>
+	
+   <body>
+      <h1>This is a heading</h1>
+      <p>Document content goes here.....</p>
+   </body>
+</html>
+
+- <!DOCTYPE html> - It defines the document type or it instruct the browser about the version of HTML.
+- <HTML> - it will inform to browser that it is HTML document and text between tags are called web document 
+- <head> - it will be the first tag under <html> tag. it will close before <body> tag. it will contain meta data of document 
+- <title> - it will used to give title to web page. 
+- <body> - it is actual body of web page. this tag contain main content of web page 
+- <h1> - This tag represents the heading.
+- <p> - This tag represents a paragraph.
+
+-: types of tags 
+1. pair tag
+	- the tag which contain opening and closing tag is called pair tag 
+	- syntax <tag_name> content </tag_name>
+	- e.g <html></html>,<body></body> etc.
+	<head></head>,<script></script>
+	<p></p>,<h1></h1>
+2. unpair tag 
+	- the tag which have only opening tag and do not have closing tag 
+	- syntax <tag_name> content 
+	- e.g <br> , <hr> , <img>
+	
+-: extension of HTML of file is *.html or *.htm
+-: tags in HTML 
+1. heading 
+	- these tags is used to give heading 
+	- these are total 6 heading tags, from <h1> </h1> to <h6> </h6>
+	- <h1> </h1> - it is largest heading
+	- <h6> </h6> - it is smallest heading 
+2. paragraph 
+	- this tag is used to structure your text into different paragraphs
+	- syntax <p> </p>
+3. Line Break Tag
+	- this tag is used to break line, and new content will go on new line 
+	- syntax - <br> 
+4. center tag 
+	- this tag is used to put the content in a center of page or in any cell or any div
+	- syntax <center> </center>
+5. Horizontal Lines
+	- this tag is used to draw the horizontal line 
+	- syntax <hr> 
+6. Preserve Formatting
+	- this tag is used to show the text or content as it is on web page.
+	- syntax <pre> </pre>
+7. comment 
+	- syntax <!-- -->
+8. anchor tag 
+	- this tag is used to create a hyper link of web page 
+	- syntax <a  href = "..........." target="_blank"> </a>
+	
+- href=URL	-: Specifies the URL of the page the link goes to
+	<a href="pahe_1.html"> Click Here </a> 
+- target=value -: 
+	- _blank: It opens the link in a new window.
+	- _self: It is the default value. It opens the linked document in the same frame.
+	- _parent: It opens the linked document in the parent frameset.
+	- _top: It opens the linked document in the full body of the window.
+	- framename: It opens the linked document in the named frame.
+
+9. abbreviation tag 
+	- this tag is used to defines an abbreviation for a phrase or longer word.
+	- syntax <abbr title="HyperText Markup language">HTML</abbr>  
+10. text related tags 
+	a) bold 
+		- this tag is used to make text bold 
+		- syntax <b> </b>
+		- other tag <strong> </strong>
+	b) italic 
+		- this tag is used to make text italic 
+		- syntax <i> </i>
+		- other tag <cite> </cite>
+	c) underline 
+		- this tag  is used to make text underline 
+		- syntax <u> </u> 
+		- other tag <ins> </ins> 
+	d) strike 
+		- this tag is used to make text strike through 
+		- syntax <strike> </strike> 
+		- other tag <del> </del>
+	e) Monospaced Font
+		- this tag is used to make text in monospaced font
+		- syntax <tt> </tt>
+	f) super script tag 
+		- this tag is used to make text as super script 
+		- the text will displayed half a character's height above the other characters.
+		- syntax <sup> </sup>
+	g) sub script tag 
+		- this tag is used to make text as sub script 
+		- the text will displayed half a character's height beneath the other characters.
+		- syntax <sub> </sub>
+	h) Larger Text
+		- this tag is used to make text big one font size by other characters 
+		- syntax <big> </big>
+	i) Smaller Text
+		- this tag is used to make text small one font size by other characters 
+		- syntax <small> </small>
+	j) Emphasized Text
+		- this tag is used to make text emphasized.
+		- syntax <em> </em>
+	k) Marked Text
+		- this tag is used to make text highlight.
+		- syntax <mark> </mark>
+	l) Text Abbreviation
+		- this tag is used to give full form of short cut 
+		- the title attribute must contain this full description
+		- syntax <abbr title= "..."></abbr>
+	m) Acronym Element
+		- this tag is used to represent as acronym.
+		- syntax <acronym> </acronym>
+	n) Text Direction
+		- this tag is used to define text 
+		- syntax <bdo dir = "rtl">From Right To Left.</bdo>
+	o) Special Terms
+		- this tag is used to define special terms 
+		- it is same as italic tag 
+		- syntax <dfn>special</dfn>
+	q) Short Quotations
+		- this tag is used to show quotes to text
+		- syntax <q>I like Java Program.</q>
+	r) Computer Code
+		- this tag is used to show programming code to appear on a Web page
+		- it is same as monospaced tag 
+		- syntax <code>This is code.</code>
+11. keyboard 
+	- this tag is used to show keyboard shortcut 
+	- syntax <kbd> clt+s </kbd>
+12. division tag 
+	- this tag is used to create section in html web page 
+	- syntax <div> </div> 
+13. image tag 
+	- this tag is used to insert image in web page 
+	- syntax <img/>
+	- e.g <img src="..." alt="..."/>  
+- name
+- id
+- class 
+- width
+- height
+- <figure> </figure> - this tag is used to mark up in a document 
+- <figcaption> </figcaption> - this tag is used to give caption ogto image 
+-: image mapping  
+<figure>
+	<figcaption>This is Office Table</figcaption>
+	<img src="C:\Ek\javascript\images\office_table_1.png" alt="Image of Office Table" width="500px" height="500px" name="officetable1" id="officetable_1" usemap="#office_element" />
+</figure>
+
+<map name="office_element">
+  <area shape="rect" coords="34,44,270,350" alt="Screen" href="Test_program_5.html">
+</map>
+
+14. link tag 
+	- this tag is used in heading section
+	- it is used to attach external css files
+	- syntax <link href="..." media="screen" rel="stylesheet" type="text/css">
+- href=URL -: Specifies the URL of the resource document.
+- media=value -: Specifies the device the document will be displayed on
+- rel=value -: Describes the relationship between the current document and the destination URL.
+- type=Value -: The MIMEtype of content at the link destination
+	- MIME -: Multipurpose Internet Mail Extensions
+	- it will indicate format of document 
+15. Meter tag 
+	- this tag is used to show progress 
+	- syntax <meter> </meter>
+16. span tag 
+	- this tag is used to show content in one line 
+	- syntax <span> </span>
+17. style tag 
+	- this tag is used in heading section 
+	- this tag is used to define internal css in web page 
+	- syntax <style> </style>
+18. Meta Tags
+	- this tag is used to give information of about web page. it is called metadata of web page
+	- this tag does not have closing tag and have information in attributes 
+	- information like name, author, view and keywords etc. 
+	- you can define many meta tag in one web page 
+	- this tag will not affect on any content display - so if you not mention this tag does not create any matters.
+	- attributes of meta tag 
+	1. name 
+		- Name for the property.
+		- application-name, author, description, generator, keywords
+	2. content 
+		- Specifies the property's value.
+		- text
+	3. scheme - 
+	4. http-equiv 
+		- Used for http response message headers. For example, http-equiv can be used to refresh the page or to set a cookie. Values include content-type, expires, refresh and set-cookie.
+		- content-security-policy, content-type, default-style, refresh
+	5. character_set - It specifies the character encoding of an HTML page.
+-: attributes of HTML Tag
+- all html element can have attribute 
+- attribute provide additional information about html element 
+- attribute define in opening tag 
+- attribute define in the pair of name and value e.g attribute_name=attribute_value;
+- it is recommended that to define attribute in lower case 
+
+- types of attribute 
+1. global attribute 
+	- these attributes applicable to every html tag 
+	- e.g name, id, class, width, height etc 
+- align	-: right, left, center
+- valign -: top, middle, bottom
+- bgcolor -: numeric, hexidecimal, RGB values
+- background -: URL
+- id -: User Defined
+- class -: User Defined
+- width	-: Numeric Value
+- height -: Numeric Value
+- title	-: User Defined
+
+2. specific attribute 
+	- these attribute is applicable to a particular html tag 
+	- like type, value, placeholder,src,href etc;
+	
+20. script tag 
+	- this tag is used to attach external java script file 
+	- syntax <script src=" " type=""> </script>
+	- e.g <script src="home.js" type="text/JavaScript"></script>
+21. form tag 
+	- this tag is used to create form on web page 
+	- by creating a form user will enter input 
+	- syntax <form> </form>
+- action=URL 
+	- Specifies a URI/URL of the back-end script that will process the form
+- method=get,post
+	- Specifies the HTTP method to use when the form is submitted.
+	- get (the form data is appended to the URL when submitted)
+	- post (the form data is not appended to the URL)
+- name=form_name 
+- id=form_id
+- class=form_class 
+- target=target_value	
+Target to open the given URL.
+a) _blank − the target URL will open in a new window.
+b) _self − the target URL will open in the same frame as it was clicked.
+c) _parent − the target URL will open in the parent frameset.
+d) _top − the target URL will open in the full body of the window.
+
+22. label tag 
+	- this tag is used to give label to form control
+	- syntax <label for=""> </label>
+	- e.g <label for="">label</label>
+
+23. input tag 
+	- this tag is used to take input from user 
+	- syntax <input/> 	
+	- e.g <input/>
+- name=input_name
+- id=input_id
+- class=input_class
+- placeholder=value 
+		- it will show hint to user which type value you should enter here 
+- value=Value
+	- it will take initial value for 
+	- it will used for check box or radio 
+- type=type_value
+	- button - to create a button
+	- checkbox - to create a check box
+	- date - to enter date 
+	- email -
+	- file - to upload the file 
+	- number - to enter number 
+	- password -to enter password 
+	- radio - to create radio button 
+	- range - to create slider or range
+	- reset
+	- submit - to create submit button 
+	- text - to enter normal text 
+- size=value
+	- it will define a width of character - which is enter in input 
+- width=value 
+- height=value 
+- required 
+	- it will show atsrik (*) 
+	- it will tell to user that a specific filed is mandatory
+- maxlength=value
+- max=value
+- min=value
+
+24. button tag 	
+	- this tag is used to create button 
+	- syntax <button> </button>
+	- e.g <button> </button>
+- type=value 
+- name=button_name
+- id=button_id 
+- class=button_class 
+- disabled
+- autofocus
+
+25. textarea tag 
+	- this tag is used to create a input area with multiple rows and cols 
+	- syntax <textarea> </textarea>
+	- e.g <textarea> </textarea>
+- name=name_value
+- id=id_name
+- class=class_name
+- cols=number 
+	- no.of columns 
+- rows=number 
+	- no.of rows 
+- warp=value 
+	- value -: soft or hard 
+- placeholder=value
+- readonly 
+- required 
+- maxlength=number
+	- A text area with a maximum length of 50 characters:
+
+26. select tag 
+	- this tag is used to create a list 
+	- syntax <select> </select>
+	- e.g <select> </select>
+- disabled
+- name=name_value
+- id=id_name
+- class=class_name 
+- multiple
+- required
+- option tag 
+	- this tag is used to create option in select tag 
+	- syntax <option> </option>
+	- e.g <option> </option>
+	- value=value
+- optgroup tag 
+	- this tag is used to create option group 
+	- syntax <optgroup label="">
+	- e.g  <optgroup label="Fruits">
+- size=number
+	- A drop-down list with three visible options:
+	
+27. List tag 
+	- there are 2 types of list 
+	1. order list
+		- syntax <ol> </ol>
+		- type=type_value
+		- type="1"	The list items will be numbered with numbers (default)
+		  type="A"	The list items will be numbered with uppercase letters
+		  type="a"	The list items will be numbered with lowercase letters
+		  type="I"	The list items will be numbered with uppercase roman numbers
+		  type="i"	The list items will be numbered with lowercase roman numbers
+	2. unorder list 
+		- syntax <ul> </ul>
+		- type=type_value
+		1. disc
+		2. circle
+		3. square
+		4. none
+	- <li> tag 
+		- this tag is used to create list option in list
+
+28. marquee tag 
+	- this tag is used to create scroll the text 
+	- syntax <marquee> </marquee>
+	- e.g <marquee> </marquee>
+- behavior -: scroll,slide,alternate
+- bgcolor -: rgb(x,x,x),#xxxxxx,colorname
+- direction	-: up,down,left,right
+- loop -: number,INFINITE
+- scrolldelay -: seconds
+- scrollamount -: number
+
+- measurement unit in html
+1. cm -: centimeters
+2. mm -: millimeters
+3. in -: inches (1in = 96px = 2.54cm)
+4. px * -: pixels (1px = 1/96th of 1in)
+5. pt -: points (1pt = 1/72 of 1in)
+6. pc -: picas (1pc = 12 pt)
+
+29. table tag 
+	- this tag is used to create table on web page 
+	- syntax <table> </table>
+- name
+- id 
+- class 
+- colspan=number - marge no.of columns and make one columns
+- rowspan=number - merge no.of rows and make one row
+- bgcolor
+- border=number
+- align- left, center, Right
+- cellspacing=number
+- cellpadding=number
+
+- <thead> </thead> - table heading 
+- <th> </th> - table heading 
+- <tbody> </tbody> - table body 
+- <td> </td> - table data 
+- <tr> </tr> - table row 
+- <colgroup> </colgroup> - This tag is used to group one or more columns in a table for formatting purposes.
+- <col> </col> - this tag is used with <colgroup> tag and it is used to give style and formatting table.
+<colgroup>
+	<col span="2" 
+		 style="background-color: green; color: white" />
+	<col style="background-color: tomato" />
+
+	<!-- colgroup tag ends here-->
+</colgroup>
+
+URL - Uniform Resource Locator
+SEO - Search Engine Optimization
+HTML - Hyper Text Markup Language 
+UTF - Unicode Text Format 
+IP - Internet Protocol
+HTTP - Hyper Text Transfer Protocol 
+TCP - Transfer Control Protocol 
+FTP - File Transfer Protocol 
+HTTPs - Hyper Text Transfer Control Secure
+CSS - Casecade Style Sheet 
+SRC - Source
+HREF - Hyper Reference 
+
+
+30. embeded tag 
+	- this tag is used to embed the video, audio,image or web page also into web page 
+	- syntax <embed> </embed>
+- GIF Image 
+-: <embed type="image/jpg"src="C:\Ek\javascript\images\earth_1.gif" width="300px" height="300px"></embed>
+- Video File  
+-: <embed type="video/webm" src="C:\Ek\javascript\videos\video_1.mp4" width="400px" height="300px"> </embed>
+- HTML File 
+-: <embed type="text/html" src="C:\Ek\javascript\Test_program_4.html" width="300px" height="300px"></embed>
+
+31. Audio Tag 
+
+32. Video Tag 
+	- this tag is used to insert video into web page 
+	- syntax <Video> </Video>
+- <video width="320px" height="240px" controls autoplay loop muted>
+	  <source src="C:\Ek\javascript\videos\video_1.mp4" type="video/mp4">
+	  Your browser does not support the video tag.
+</video>
