@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <form action="" name="registration_form" id=" r_form" method ="post">
+             <label for="first name">Enter  first name </label>
+            <input type="text" name="first name" id="f_name" placeholder="Enter the first name">
+           <br>
+            <label for="Last  name">Enter  Last name </label>
+            <input type="text" name="last name" id="l_name" placeholder="Enter the last name">
+            <br>
+            <label for="Password">Enter Password name </label>
+            <input type="password" name="password" id="pass" placeholder="Enter the password name">
+            <br>
+            <label for="gender">select gender </label>
+            <input type="radio" name="male" id="male"value="male" checked>Male
+            <input type="radio" name="female" id="female" value="female"> female
+    <br>
+    <br>
+    <label for="select"> Select city</label>
+    <select name="city" id="city" size="3" multiple> 
+        <optgroup label="metro1">
+            <option value ="pune">pune</option>
+            <option value ="mumbai">Mumbai</option>
+        </optgroup>
+        
+        <optgroup label="metro2">
+            <option value ="nasik">nasik</option>
+            <option value="nagpur">Nagpur</option>
+        </optgroup>
+    </select>            
+    <br>
+    <label for="date"> DAte</label>
+    <input type="date" name ="dob" id="dob">
+    <br>
+    <br>
+    <label for="number"> Number click up and down</label>
+    <input type="number" name="num" id="number">
+    <br>
+    <label for="pnum"> phone number</label>
+    <input type="text" name="phone" id="phone" placeholder="Enter phone number" maxlength="10">
+<br>
+<label for="feedback">Feedback</label>
+<textarea name="feedback" id="fback" rows="10" cols ="30" placeholder="Feedback" >   
+</textarea>
+<br>
+<label for="select_sub">select Subject</label>
+<input type="checkbox" name="subject" id="java" value ="java">Java
+<input type="checkbox" name="subject" id="html" value ="html">html
+<input type="checkbox" name="subject" id="css" value ="css">css
+<input type="checkbox" name="subject" id="python" value ="python">puthon
+<input type="checkbox" name="subject" id=".net" value =".net">.net
+
+<br>
+<label for="submit_data">submit data</label>
+<input type="submit" name="submit_button" id="submit" value="Submit">
+<label for="reset_data">reset data</label>
+<input type ="reset" name="reset data" id="reset_button" value="Reset">
+
+</form>
+        </div>
+</body>
+</html>
