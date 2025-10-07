@@ -1,0 +1,395 @@
+CSS - Cascading Style Sheet
+
+- it is used to design the HTML page 
+- it is Style Sheet Language used to make HTML presentable 
+- by using CSS you can design layout of HTML page 
+- you can apply visual effects in HTML page
+
+- advantage 
+1. you can create responsive web page, means content can rearrange according to the screen sizes and devices
+2. you can apply different effects for different media e.g. screen, print, paper and other.
+3. by using CSS the Maintainance of HTML become easy means some effect you can globally or some effect you can apply to particular HTML element.
+4. by using external CSS you can reuse the CSS code for other HTML page also and this reusability create a Consistency in all HTML page 
+5. you can create animation by using CSS code 
+6. CSS is easy to learn and understand
+7. Multiple Device Compatibility - style sheet allow the content to be rearrange as per Device 
+
+- CSS deal with look and feel of HTML page 
+- look and feel means 
+	1. apply color,size, font-style to text 
+	2. apply image as background 
+	3. define a space between 2 paragraph 
+	4. apply visual effect 
+	5. make html page responsive 
+
+-: NOTE âˆ’ The World Wide Web Consortium, or W3C is a group that makes recommendations about how the Internet works and how it should evolve.
+
+- comment 
+1. single comment - //
+2. multiple line comment - /* */
+
+- html conmment 
+<!-- -->
+
+- css code interpreted by browser and then it apply to HTML element 
+- css code has 3 parts 
+1. selector 
+	- it will be the html tag, id of html element and class 
+2. property 
+	- it is attribute which apply to selector 
+3. value 
+	- it will assign the property 
+
+e.g. 
+body{
+	background-color:yellow;
+}
+
+- body -: it is selector 
+- background-color -: it is property 
+- yellow -: it is value 
+
+-> types of selector 
+1. Universal Selectors
+- this selector css code will apply to all HTML element 
+- * - Asterisk means all 
+- e.g. *{
+	
+}
+
+2. Tag Selectors
+- in this selector css code will apply to that particular tag 
+- e.g. body{
+	//css code 
+}
+body{
+	background-color:red;
+}
+	
+3. Descendant Selectors
+- in this selector css code will apply to tag inside a particular tag 
+- e.g. div p{
+	// css code 
+}
+div p{
+	background-color:pink;
+}
+
+4. Class Selectors
+- in this selector css code will apply to a particular tag which used class attribute and use this class 
+- e.g .class_name{
+	//css code 
+}
+.forDiv{
+	background-color:black;
+}
+
+-: tag_name.class_name{
+	//css code 
+}
+div.p{
+	background-color:orange;
+}
+
+- you can apply many css class for one html element 
+
+5. Id selector 
+- in this selector css code will apply to a particular id
+- e.g. #id_name{
+	//css code 
+}
+#div_1{
+	background-color:red;
+}
+
+6. Attribute Selector
+- in this selector css code will apply to tag which have specific attribute
+- e.g. tag_name[attribute_name=value]{
+	
+}
+input[type="text"]{
+	background-color:red;
+}
+
+7. Pseudo-class Selector
+- in this selector css code will apply to html element which have a specific state
+- element state
+-: for anchor tag
+1. link	-: unvisited link
+2. visited  -: visited link
+3. hover  -: mouse over the link
+4. active -: link selected
+-: for input tag 
+5. focus -: when element is focus
+6. checked -: when element is checked 
+7. default -: for radio checked attribute 
+8. disabled -: for input tah which have disabled attribute 
+9. enabled -: 
+10. empty -: for empty tag 
+11. first-child
+12. required
+13. readonly
+14. optional
+15. valid
+- e.g. tag_name : state_of_element{
+	
+}
+a:hover{
+	color:yellow;
+}
+
+8. Group selector 
+- in this selector css code will apply to all tag in html page 
+- e.g tag_name_1, tag_name_2, tag_name_3{
+	//css code 
+}
+- h1,h2,h3{
+	background-color:red;
+}
+
+9. Pseudo-element Selector
+- in thos selector css code will apply to specific part of the selected elements
+- Pseudo-element
+1. ::first-line 
+2. ::first-letter 
+3. ::before 
+4. ::after 
+5. ::marker 
+6. ::selection 
+- e.g. tag_name:: Pseudo-element{
+	//css code 
+}
+- p::first-line{
+	color:red;
+}
+
+- apply css code to HTML page 
+1. in-line css code 
+	- syntax <tag_name style="css code;"> content </tag_name>
+	- <p style="color:orange;" id="p_1">
+			Sports is a physical activity which is considered good for both mental and physical health.
+		</p>
+2. internal css code (Embedded)
+	- The CSS rule set should be within the HTML file in the head section.
+	- internal css code by using <style type="text/css"> </style> tag 
+3. external css code 
+	- you can apply sperate css file 
+	- *.css is the extension of css file 
+	- by using <link> tag in the HTML file in the head section.
+	- syntax <link href="">
+	- <link href="page_1.css" rel="stylesheet" media="screen">
+	- attribute of link tag 
+	1. type
+	2. href 
+	3. media
+	4. rel 
+4. external by @import 	
+	- @import is similar to <link> tag 
+	- @import "page_1.css";
+	- @import url("page_1.css");
+
+-: css attributes 
+1. background-color: 
+- background-color: attribute_value;
+1. background-color: color_name;
+	- background-color: red;
+2. background-color: rgb(red_value,green_value,blue_value);
+	- background-color: rgb(125,234,222);
+3. background-color: #hexacolor_name;
+	- background-color: #ffd699;
+4. background-color: rgb(red_value,green_value,blue_value,opacity);
+	- background-color: rgb(125,234,222,0.5);
+5. background-color: hsl(Hue, Saturation, Lightness);
+	- background-color: hsl(170, 50%, 50%);
+6. background-color: hsl(Hue, Saturation, Lightness,opacity);
+	- background-color: hsl(170, 50%, 50%,0.5);
+	
+2. border:
+- border: border-width border-style border-color;
+- border-style - 
+1. dotted - Defines a dotted border
+2. dashed - Defines a dashed border
+3. solid - Defines a solid border
+4. double - Defines a double border
+5. groove - Defines a 3D grooved border. The effect depends on the border-color value
+6. ridge - Defines a 3D ridged border. The effect depends on the border-color value
+7. inset - Defines a 3D inset border. The effect depends on the border-color value
+8. outset - Defines a 3D outset border. The effect depends on the border-color value
+9. none - Defines no border
+10. hidden - Defines a hidden border
+
+- border-bottom
+- border-left
+- border-right
+- border-top
+
+- border-color
+- border-width
+- border-style
+- border-radius
+	- border-radius: 5px - apply to all corner web element 
+	- border-radius: top-left corner, top-right corner, bottom-right corner, bottom-left corner;
+
+3. background-image:
+- 
+1. background-image: linear-gradient(color_1, color_2, ...);
+	- background-image: linear-gradient(red, yellow);
+	- background-image: linear-gradient(red, yellow, pink);
+2. background-image: linear-gradient(direction, color_1, color_2, ...);
+	- background-image: linear-gradient(to right, black , pink);
+	- background-image: linear-gradient(to left, yellow, pink);
+	- background-image: linear-gradient(to bottom, yellow, pink);
+	- background-image: linear-gradient(to top, yellow, pink);
+	- background-image: linear-gradient(to bottom left, yellow, pink);
+	- background-image: linear-gradient(to bottom right, yellow, pink);
+	- background-image: linear-gradient(to top right, yellow, pink);
+	- background-image: linear-gradient(to top left, yellow, pink);
+3. background-image: linear-gradient(angle, color_1, color_2, ...);
+	- background-image: linear-gradient(180deg, yellow, pink);
+	- background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+	- background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+4. background-image: radial-gradient(shape size at position, start-color, ..., last-color);
+	- background-image: radial-gradient(red, yellow, green);
+	- background-image: radial-gradient(red 5%, yellow 15%, green 60%);
+	- background-image: radial-gradient(circle, red, yellow, green);
+	- background-image: radial-gradient(circle 100%, red, yellow, green);
+	- background-image: radial-gradient(ellipse at top, red, yellow, green);
+5. background-image: conic-gradient([from angle] [at position,] color [degree], color [degree], ...);
+	- background-image: conic-gradient(red, yellow, green);
+	- background-image: conic-gradient(red, yellow, green, blue, black);
+	- background-image: conic-gradient(red 45deg, yellow 90deg, green 210deg);
+6. background-image: url("image_path");
+	- background-image: url("tree_1.jpg");
+	- background-repeat: repeat-y,repeat-x,no-repeat;
+	- background-position: right top, right left, bottom right, bottom left;
+	- background-attachment: fixed, scroll;
+	
+- background-color: #ffffff;
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+- background: #ffffff url("img_tree.png") no-repeat right top;
+
+- URL -Uniform Resource Locator
+
+4. Text 
+- text-overflow - clip|string|ellipsis|initial|inherit;
+- overflow: hidden | visible
+- word-wrap: 
+	1. normal -  It is the default value, The lines can only be broken at normal break points (spaces, non-alphanumeric characters, etc.)
+	2. break-word - Words that exceed the width of the container will be arbitrarily broken to fit within the containerâ€™s bounds.
+	3. initial - It is used to set word-wrap property to its default value.
+	4. inherit - This property is inherited from its parent.
+- word-break: 
+	1. normal: This property uses the default line break rules.
+	2. break-all: It is used to break the words at any character to prevent overflow.
+	3. Keep-all: It is same as value normal. 
+	4. break-word: It is used to broken the words at arbitrary points to prevent overflow.
+	5. initial: It sets the property to its default value.
+	6. inherit;
+- writing-mode: horizontal-tb|vertical-rl|vertical-lr;
+- text-align:
+	1. left
+	2. right 
+	3. center 
+	4. justify
+- text-decoration:
+	1. overline
+	2. underline 
+	3. line-through
+	4. none 
+- text-indent:
+	- value px; 
+- text-justify:
+- text-orientation: 
+- text-transform:
+
+5. Font
+- color - font color
+- font-family- font_name
+- font-size- font size
+- font-Style -: normal, italic, oblique
+- font-weight -: normal, bold, number
+- font-variant -: normal, small-caps, initial, inherit	
+- font-stretch -: normal, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded;
+
+6. margin
+- margin: value_1, value_2, value_3, value_4;
+- margin: top right bottom left;
+- margin-bottom;
+- margin-left;
+- margin-right;
+- margin-top;
+
+- margin: value_1; - all four margins are 10px
+- margin: value_1 value_2 value_3; - top , right and left, bottom;
+- margin: value_1 value_2; - top and bottom , right and left;
+
+7. padding
+- padding: value_1, value_2, value_3, value_4;
+- padding: top right bottom left;
+- padding-bottom;
+- padding-left;
+- padding-right;
+- padding-top;
+
+- padding: value_1; - all four margins are 10px
+- padding: value_1 value_2 value_3; - top , right and left, bottom;
+- padding: value_1 value_2; - top and bottom , right and left;
+
+
+8. cursor
+- cursor: cursor_name;
+.alias 
+.all-scroll 
+.auto 
+.cell 
+.col-resize 
+.context-menu 
+.copy 
+.crosshair 
+.default 
+.e-resize 
+.ew-resize 
+.grab 
+.grabbing 
+.help 
+.move 
+.n-resize 
+.ne-resize 
+.nesw-resize 
+.ns-resize 
+.nw-resize 
+.nwse-resize 
+.no-drop 
+.none 
+.not-allowed 
+.pointer 
+.progress 
+.row-resize 
+.s-resize 
+.se-resize 
+.sw-resize 
+.text 
+.url 
+.w-resize 
+.wait 
+.zoom-in 
+.zoom-out;
+
+9. Image
+-webkit-box-reflect: below;
+-opacity: 0.3;
+
+10. shadow effect
+
+- text-shadow
+	- text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit;
+	- text-shadow: 5px 5px 10px red;
+	- text-shadow: 0px 0px 10px blue, 0px 0px 10px red;
+	- text-shadow: rgba(231,100, 150, 1.0) 0px 0px 10px 30px;
+- box-shadow
+	- box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;
+	- box-shadow: 5px 5px 10px blue;
+	- box-shadow: 0px 0px 10px blue, 0px 0px 10px red;
+	- box-shadow: rgba(231,100, 150, 1.0) 0px 0px 10px 30px;
