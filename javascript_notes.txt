@@ -1,0 +1,2524 @@
+-> Java Script 
+- It is a client-side and /*server-side*/ programming language.
+- It is a lightweight programming language.
+- It is a cross-platform programming language.
+- It is a single_thread programming language.
+- It is an interpreted programming language.
+- It is a weakly type programming language.
+- It is a dynamic programming language.
+- It is an imperative and declarative type of programming language.
+- It contain standard library of objects like Array, Date, Math and core set of language like operator, control statements
+
+-> Features of Java Script 
+- It contain Document Object Model (DOM). 
+- DOM is used to interact with Web Page.
+- Java Script is used to create a dynamic web page.
+- It is used to perform the validation of form.
+- Java Script has function as object. The object contain property or methods.
+- Java Script does not required compiler.
+- It contain Browser Object Model (BOM).
+- BOM is API which is used to interact with browser.
+- It is very easy learn because syntax are similar to C++ and Java.
+
+-> Why lightweight programming language.
+- Java Script need low CPU (Central Processing Unit) usage.
+- It does not need any CPU resourced.
+- It will run in browser.
+- Java Script does not have data type like Java programming language.
+- Every thing in Java Script is treated object
+
+-> limitation of Java Script 
+- 
+
+-> Operators in Java Script 
+a) Arithmetic Operators -: total - (6)
+1. Addition - [+]
+var a="Pune"+"City";
+document.write("<br>"+a);
+2. Subtraction - [-]
+3. Multplcation - [*]
+4. Division - [/]
+5. Modulus (Mod) -[%]
+6. Exponentiation - [**] 
+	- it is used to find the power of the first Operators raised to the second Operators.
+	- var a=6,b=5;
+	- console.log(a**b);
+
+-:
+var d1=12,d2=2,d3=0;
+document.write("<br> "+(12/2));
+document.write("<br> "+(0/2));
+document.write("<br> "+(12/0));//Infinity
+document.write("<br> "+(-12/0));//-Infinity
+document.write("<br> ");
+document.write("<br> "+(12.0/2));
+document.write("<br> "+(12/2.0));
+document.write("<br> "+(0.0/2));
+document.write("<br> "+(12.0/2.0));
+document.write("<br> "+(12.0/0.0));//Infinity
+document.write("<br> "+(-12.0/0.0));//-Infinity
+document.write("<br> ");
+document.write("<br> "+(0/0));//NaN
+document.write("<br> "+(0.0/0.0));//NaN
+-:
+var d1=12;//decimal number
+document.write("<br> "+d1);
+var d2=0126;//octal number
+document.write("<br> "+d2);
+var d3=0b10101;//binary number
+document.write("<br> "+d3);
+var d4=0xface;//hexa decimal number
+document.write("<br> "+d4);
+-:
+document.write("<br> "+(12+2));
+document.write("<br> "+(12+2.0));
+document.write("<br> "+(12.0+2.0));
+document.write("<br> "+(12+'T'));
+document.write("<br> "+(12+2+'T'));
+document.write("<br> "+(12+2+'T'+3+5));
+	
+b) Assignment Operators - (9)
+1. = -: assign a value from right to left 
+2. +=
+var b="Mango";
+b+=" Fruit";
+document.write("<br>"+b);
+3. -=
+4. /=
+5. %=
+6. *=
+7. **= 
+8. &=
+9. |=
+
+c) Increment and Decrement Operator - (2)
+1. Increment 
+-: Pre Increment
+	var a=10;
+	console.log(a);
+	++a;
+	console.log(a);
+- in pre increment - first Increment the value and then used it.
+
+-: Post Increment
+	var a=10;
+	console.log(a);
+	a++;
+	console.log(a);
+- in post increment - first used the value and Increment it.
+
+2. Decrement 
+-: Pre Decrement 
+	var a=10;
+	console.log(a);
+	--a;
+	console.log(a);
+- pre decrement - first Decrement the value and then used it.
+
+-: Post Decrement 
+	var a=10;
+	console.log(a);
+	a--;
+	console.log(a);
+- in post decrement - first used the value and Decrement it.
+
+d) Relational Operator (Comparison Operators) (8) - result type is boolean - true / false
+1. less than - [<]
+2. greater than - [>]
+3. less than equal to - [<=]
+4. greater than equal to - [>=]
+5. equal to - [==]
+document.write("<br>"+("Pune"=="Pune"));
+document.write("<br>"+(false==true));
+6. not equal to - [!=]
+document.write("<br>"+("Pune"!="Pune"));
+document.write("<br>"+(false!=true));
+7. Strict equal to - [===]
+document.write("<br>"+("Pune"==="Pune"));
+document.write("<br>"+(true===true));
+8. Strict not equal to - [!==]
+document.write("<br>"+("Pune"!=="Pune"));
+document.write("<br>"+(false!==true));
+
+-: difference between equal to (==) / not equal to(!=) and Strict equal to(===) / Strict not equal to(!==) operator 
+- equal to (==) / not equal to(!=) Operator Compare 2 element by contain - it will not check type of element  
+- Strict equal to(===) / Strict not equal to(!==) Operators Compare 2 element by contain and also check the type of element 
+-
+var a=100,b=100;
+document.write("<br> "+(a==b));//true
+document.write("<br> "+(a===b));//true
+var c="100";
+document.write("<br> "+(a==c));//true
+document.write("<br> "+(a===c));//false
+
+-
+var a=100,b=10;
+document.write("<br> "+(a!=b));//true
+document.write("<br> "+(a!==b));//true
+var c="10";
+document.write("<br> "+(a!=c));//true
+document.write("<br> "+(a!==c));//true
+
+e) Logical Operators (3) - result type is boolean - true / false
+- Logical Operator is used to join more than 2 condition
+1. and (&&)  
+2. or (||)
+3. not (!)
+
+- and (&&)
+T	T	->	T
+T	F	->	F
+F	T	->	F
+F	F	->	F
+
+- or (||)
+T	T	->	T
+T	F	->	T
+F	T	->	T
+F	F	->	F
+
+- not (!)
+T	-> F
+F	-> T
+
+var a=10;
+document.write("<br> "+(a));
+document.write("<br> "+(!a));
+document.write("<br> "+!(!a));
+
+f) Other Relational Operator - result type is boolean - true / false
+1. in 
+2. instanceof 
+
+1. in  - this operator is used to check a particular element is exists in object or not and also check its inherited property or not.
+-
+var a=["Mango","Apple","Cherry","Orange"];
+document.write("<br> "+(1 in a));//true	- 1 index is present in array or not
+document.write("<br> "+(5 in a));//false - 5 index is present in array or not
+document.write("<br> "+("Pune" in a));//false
+document.write("<br> "+("Cherry" in a));//false
+
+-
+const Person = { 
+	name: "Rohan", 
+	age: 21, 
+	city: "Pune"
+};
+document.write("<br> "+("name" in Person));//true
+document.write("<br> "+(name in Person));//false
+document.write("<br> "+("gender" in Person));//false
+
+2. instanceof - this operator is used to check a particular element is instance of object or array.
+var a="Mango";
+document.write("<br> "+(a instanceof Object));//false
+document.write("<br> "+(a instanceof String));//false
+var b=new String("Apple");
+document.write("<br> "+(b instanceof Object));//true
+document.write("<br> "+(b instanceof String));//true
+
+-
+var c=["Mango","Apple","Cherry","Orange"];
+document.write("<br> "+(c instanceof Object));//true
+document.write("<br> "+(c instanceof Array));//true
+
+g) Conditional Operator (Ternary Operator)
+- syntax 
+answer = (condition)?expression1:expression2;
+
+- if condition is result is true then expression1 is the answer or if condition result is false then expression2 is the answer
+-
+var a=(100>555)?"Red":"Pink";
+document.write("<br> "+a);//pink
+
+- in Ternary Operator 3 operand is used is called Ternary Operator
+
+h) Unary Operators - 
+- in Unary Operators only 1 operand is used is called Unary Operators
+
+1. plus operator - [+]
+2. minus operator - [-]
+3. Increment operator - [++]
+4. Decrement operator - [--]
+5. Logical not Operator - [!]
+6. Bitwise not Operator - [~]
+7. typeof operator 
+8. delete operator 
+9. void operator 
+
+7. typeof operator 
+- this operator is used to show the data type of The operand can be any object, function, or variable.
+var a=+444;
+document.write("<br> "+a+" --> Type of --: "+(typeof a));
+var b=["Mango","Banana","Cherry"];
+document.write("<br> "+b+" --> Type of --: "+(typeof b));
+var c="Yellow";
+document.write("<br> "+c+" --> Type of --: "+(typeof c));
+var b=-555;
+document.write("<br> "+b+" --> Type of --: "+(typeof b));
+
+8. delete operator 
+- this operator is used to remove a particular property from object;
+-
+let person = { 
+	name: "Rohan", 
+	age: 21, 
+	city: "Pune"
+}; 
+document.write("<br> "+person);
+document.write("<br> "+person.age);
+//delete person.age;
+document.write("<br> "+delete person.age);//true
+document.write("<br> "+person.age);
+document.write("<br> "+delete person[name]);//true
+
+9. void operator 
+- The void operator evaluates the given expression and then returns undefined.
+function myFunction() { 
+	return void 0; 
+}
+document.write("<br> "+myFunction());
+
+i) comma operator [,] 
+- it is used to declare many variables in one line 
+- it is used to join 2 String 
+var a=1,b=5,c=7;
+let d=4,e=66,f=11;
+document.write(1,5);
+document.write("<br> ",33);
+document.write("<br> Pune"," City");
+
+j) Bitwise operator -(7)
+
+1. and (&)
+2. or (|)
+3. not (~)
+4. xor (^)
+5. left shift (<<)
+6. right shift (>>)
+7. Zero Fill Right Shift(>>>)
+
+k) BigInt Operator 
+- BigInt is a built-in object in JavaScript that provides a way to represent whole numbers larger than 2^53-1.
+var a=111222333444555666777888999000;
+document.write("<br> "+a);//1.1122233344455567e+29
+var b=BigInt(111222333444555666777888999000);
+document.write("<br> "+b);
+var c=BigInt("111222333444555666777888999000");
+document.write("<br> "+c);
+var d=0b10101;//binary number
+document.write("<br> "+d);
+var e=0xface;//hexa decimal number
+document.write("<br> "+e);
+var f=03451;//octal number
+document.write("<br> "+f);
+var g=BigInt(0b111);//binary number
+document.write("<br> "+g);
+var h=BigInt(0x4513);//hexa decimal number
+document.write("<br> "+h);
+var i=BigInt(04513);//octal number
+document.write("<br> "+i);
+
+-> Data Type in Java Script
+1. String
+2. Number
+3. BigInt
+4. boolean
+5. undefined
+6. null
+7. Symbol
+8. Object
+
+-> Object Data Type
+1. Object
+2. Array
+3. Date
+4. Math
+
+-> variable declaration 
+
+a) var 
+- it is a keyword 
+- you can change the value of variable 
+- syntax 
+var variable_name=value;
+var a=100;
+
+var variable_name;
+variable_name=55;
+
+var r;
+r=400;
+
+- default value of variable is undefined
+- the variable declare first then used it otherwise you will get default value undefined 
+- you can redeclare the variable 
+- you can not delete global variable
+- the variable which declare with var has function scope 
+
+1)
+var t1=300;
+document.write("<br> "+t1);
+{
+	var t1=200;//redeclare variable 
+	document.write("<br> "+t1);
+}
+document.write("<br> "+t1);
+
+2)
+var t1=100,t2=300,t3=500;//declare multiple variable
+document.write("<br> "+t1);
+document.write("<br> "+t2);
+document.write("<br> "+t3);
+
+3)
+var t1=100;
+function m1(){
+	var t1=400;//function scope variable
+	document.write("<br> "+t1);
+}
+m1();
+document.write("<br> "+t1);
+
+4)
+document.write("<br> "+t1);//used variable before declaration - it will get undefined
+var t1=100;
+
+5)
+var t1;//default value of variable 	is undefined
+document.write("<br> "+t1);//undefined
+
+b) let keyword
+- it is a keyword
+- the variable declare with let has block scope 
+- you can not redeclare this variable 
+- you must declare this variable before its used.
+- default value of variable is undefined 
+
+1)
+let t1;
+document.write("<br> "+t1);//undefined
+
+2) 
+let t1=5,t2=6,t3=77;//multiple variable declaration
+document.write("<br> "+t1);
+document.write("<br> "+t2);
+document.write("<br> "+t3);
+
+3) used variable before its declaration
+document.write("<br> "+t1);//Cannot access 't1' before initialization
+let t1=5;
+
+4) 
+let t1=400;
+{
+	let t1=300;
+	document.write("<br> "+t1);
+}
+document.write("<br> "+t1);
+
+5) 
+let t1=400;
+function m1() {
+	let t1=200;
+	document.write("<br> "+t1);
+}
+m1();
+document.write("<br> "+t1);
+
+c) const variable 
+- it is a keyword
+- once you declare a variable you can not reassign its value 
+- you can not redeclare again and it has block scope 
+
+1) 
+const w1=500;
+document.write("<br> "+w1);
+
+2) 
+const w1=500;
+document.write("<br> "+w1);
+w1=222;			//Assignment to constant variable.
+document.write("<br> "+w1);
+
+3) 
+var w1=444;
+document.write("<br> "+w1);
+const w1=511;		//Identifier 'w1' has already been declared
+document.write("<br> "+w1);
+let y1=201;
+document.write("<br> "+y1);
+const y1=800;		//Identifier 'y1' has already been declared
+document.write("<br> "+y1);
+
+4) 
+const w1=300;
+{
+	const w1=400;
+	document.write("<br> "+w1);
+}
+document.write("<br> "+w1);
+
+5) 
+var w1=500;
+document.write("<br> "+w1);
+function m1(const w1) {		//Unexpected token 'const'
+	document.write("<br> "+w1);
+}
+m1(w1);
+
+6) The property of a const object can be changed but it cannot be changed to a reference to the new object
+const person={
+	name:"Rohan",
+	age:23
+};
+document.write("<br> "+person.name);
+document.write("<br> "+person.age);
+
+7) 
+const t1;
+document.write("<br> "+t1);	//Missing initializer in const declaration
+
+8) The values inside the const array can be changed, it can add new items to const arrays but it cannot reference a new array.
+const color=["Red","Green","Blue"];
+document.write("<br> "+color);
+document.write("<br> "+color.length);
+var a=color.pop();
+document.write("<br> "+a);
+document.write("<br> "+color);
+document.write("<br> "+color.length);
+var c=color.push("Pink");
+document.write("<br> "+color);
+document.write("<br> "+c);
+
+
+-> Control Statement In Java Script 
+- Control Statement is used to control the flow of execution of program 
+- types of control Statement 
+1. selection Control Statement 
+2. looping Control Statement 
+3. transfer Control Statement 
+
+1. selection Control Statement 
+
+a) if...else 
+- syntax 
+if(condition){
+	//if block
+}else{
+	//else block
+}
+- condition -: result type boolean - true / false
+- nested if...else 
+if(condition){
+	//outer block
+	if(condition){
+		//inner block
+	}
+}else{
+	//else block 
+}
+
+- else...if ladder 
+if(condition){
+	
+}else if(condition){
+	
+}else if(condition){
+	
+}else{
+	
+}
+
+b) switch case 
+- syntax 
+switch(expression){
+	case value:
+	break;
+	case value:
+	break;
+	case value:
+	break;
+	default:
+	break;
+}
+
+- boolean as expression value
+var amount=101;
+switch(true){
+	case amount==1000:
+		document.write("<br> 5.5% discount");
+	break;
+	case amount>1000:
+		document.write("<br> 6% discount");
+	break;
+	default:
+		document.write("<br> Invalid");
+	break;
+}
+-
+var a=false;
+switch(a){
+	case true:
+		document.write("True");
+	break;
+	case false:
+		document.write("False");
+	break;
+	default:
+		document.write("<br> Invalid");
+	break;
+}
+
+- number as expression value
+var a=1;
+switch(a){
+	case 1:
+		document.write("Red");
+	break;
+	case 3:
+		document.write("Blue");
+	break;
+	default:
+		document.write("<br> Invalid");
+	break;
+}
+
+- String as expression value 
+var a="Mango";
+switch(a){
+	case "Rice":
+		document.write("Food");
+	break;
+	case "Mango":
+		document.write("Fruit");
+	break;
+	default:
+		document.write("<br> Invalid");
+	break;
+}
+
+- Character as expression value
+var a='T';
+switch(a){
+	case 'T':
+		document.write("Tea");
+	break;
+	case 'A':
+		document.write("Apple");
+	break;
+	default:
+		document.write("<br> Invalid");
+	break;
+}
+
+2. looping Control Statement 
+
+a) for loop 
+- syntax 
+for(initialization; condition ; update_value){
+	//for loop block 
+}
+
+b) while loop
+initialization;
+while(condition){
+	//while loop block
+	update_value;
+}
+
+c) do..while loop
+initialization;
+do{
+	//do-while loop block 
+	update_value;
+}while(condition);
+
+d) for in loop
+- this loop is used iterate the property from object. It will iterate only those property which are enumerable type of or not.
+- key value have 4 attributes - (value, writable, enumerable, and configurable).
+- usually it is used to iterate non-array object.
+- The order in which properties are iterated may not match the properties that are defined in the object.
+-
+const person={
+	name:"Rohan",
+	age:23,
+	city:"Pune"
+};
+for(var i in person){
+	document.write("<br> "+i+" --> "+person[i]);
+}
+document.write("<br>");
+var y=[4,1,7,11];
+for(var k in y)
+	document.write("<br> "+k+"--> "+y[k]);
+
+3. transfer Control Statement 
+a) break Statement 
+- it will terminate the loop if condition is true 
+-
+for(var i=1;i<=55;i+=4){
+	if(i>44)
+		break;
+	document.write("<br> "+i);
+}
+-
+var i=1;
+while(i<=55){
+	if(i>44)
+		break;
+	document.write("<br> "+i);
+	i+=5;
+}
+-
+
+b) continue Statement 
+- it will skipp the current iteration of loop
+-
+for(var i=1;i<=20;i++){
+	if(i==7)
+		continue;
+	document.write("<br>"+i);
+}
+- Java Script dose not support goto Statement 
+
+c) label Statement 
+
+
+-> function in Java Script 
+- syntax 
+function function_name(argument_list){
+	//method body 
+}
+
+1. declaration of method 
+2. definition of method 
+3. calling of method 
+
+a) normal function 
+- return Statement
+- it will be the last Statement of function 
+- syntax 
+function function_name(argument_list){
+	//method body 
+	return value;
+}
+-
+function m1(){
+	document.write("<br> Hello Method");
+}
+m1();
+- you call function inside the function 
+-
+function m1(){
+	document.write("<br> Hello Method");
+}
+function m2(){
+	m1();
+	document.write("<br> Java Scripting");
+}
+m2();
+- pass arguments to function 
+var a=4,b=5;
+function getPower(a,b){
+	var c=1;
+	for(var i=1;i<=b;i++){
+		c=c*a;
+	}
+	document.write("<br> "+c);
+}
+getPower(a,b);
+
+- function as variable value
+- Functions can be used the same way as you use variables.
+function cube(a) {
+	return a*a*a;
+}
+var a=4;
+a=cube(a);
+document.write("<br> "+a);
+
+
+b) function Expression:
+- It is similar to a function declaration without the function name. Function expressions can be stored in a variable assignment. 
+- syntax 
+let variable_name=function(argument_list){
+	
+}
+-
+var a=6;
+var b=function m1(a){
+	return a*10;
+}
+var c=b(a);
+document.write("<br> "+c);
+
+c) Arrow function 
+- if the function has only one statement, and the statement returns a value, you can remove the brackets and the return keyword
+- the function which does not have name is called anonymous function.
+- 
+//normal function 
+function m1(a){
+	return a*10;
+}
+var a=4
+var b=m1(a);
+document.write("<br> "+b);
+//function without name
+//it is anonymous function.
+var c=function(a){
+	return a*2;
+}
+var d=c(3);
+document.write("<br> "+d);
+//function without function keyword
+var e=(a)=>{
+	return a*100;
+}
+var f=e(4);
+document.write("<br> "+f);
+//fucntion without curly brackets and return statement
+var g=(a)=> a*3;
+var h=g(2);
+document.write("<br> "+h);
+
+d) function Object
+
+e) recursive function
+- the function which is called itself is called recursive function.
+-
+function m1(a){
+	document.write("<br> "+a);
+	if(a<=1){
+
+	}else{
+		m1(--a);
+	}
+}
+m1(10);
+
+-
+function m1(a){
+	document.write("<br> "+a);
+	m1(--a);//Maximum call stack size exceeded
+}
+m1(10);
+
+f) default parameter to Method
+-
+function m1(a){
+	document.write("<br> "+a);//undefined
+}
+m1();
+
+- if a programmer will not pass any parameter to the then default value which is already assign to the parameter will consider 
+- 
+function m1(a="Sky"){
+	document.write("<br> "+a);
+}
+m1();
+
+- but if programmer pass a value to parameter then it will replace the default value.
+-
+function m1(a="Sky"){
+	document.write("<br> "+a);
+}
+m1("Moon");
+
+-: evaluates default parameter 
+- JavaScript engine evaluates the default arguments at the time you call the function.
+-
+function m1(b,a=[]){
+	//document.write(a.push(b));
+	a.push(b);
+	return a;
+}
+var c=m1("sky");
+document.write("<br>"+c);
+c=m1("moon");
+document.write("<br>"+c);
+
+-: Using other parameters in default values
+function m1(a=1,b=a,c=a+b){
+	document.write("<br> "+a);
+	document.write("<br> "+b);
+	document.write("<br> "+c);
+}
+m1();
+m1(4);
+
+-
+function m1(a=b,b=5){ //Cannot access 'b' before initialization
+	document.write("<br> "+a);
+	document.write("<br> "+b);
+}
+m1();
+
+-
+function m1(a,b=5,c=2){ 
+	document.write("<br> "+a);
+	document.write("<br> "+b);
+	document.write("<br> "+c);
+}
+m1();
+m1(1);
+m1(-11,10);
+m1(33,66,8);
+
+-: Passing a function to another function
+- you can pass a function as an argument into another function.
+function sum(a,b){
+	var c=a+b;
+	return c;
+}
+function average(a,b,sum){
+	var c=sum(a,b);
+	var d=c/2;
+	return d;
+}
+var e=average(12,8,sum);
+document.write("<br> "+e);
+
+-
+function meterToKiloMeter(a){
+	return (a*1)/1000;
+}
+function convert(method,a){
+	return method(a);
+}
+var b=convert(meterToKiloMeter,3000);
+document.write("<br> "+b);
+
+-: Returning functions from functions
+-  you can return a function from another function.
+-
+let person=[
+	{name:"rohan",age:23,city:"Pune"},
+	{name:"pooja",age:21,city:"Mumbai"},
+	{name:"nikita",age:24,city:"Satara"},
+];
+function compare(name_of_property) {
+	return function(a,b){
+		var p1=a[name_of_property],p2=b[name_of_property];
+		if(p1>p2)
+			return -1;
+		else if(p1<p2)
+			return 1;
+		else
+			return 0;
+	};
+}
+show(person);
+person.sort(compare("age"));
+show(person);
+function show(person){
+	document.write("<br> Person Data ");
+	document.write("<br>");
+	for(var i in person){
+		//document.write("<br> Name -> "+person[i]+" --> "+i);
+		for(var k in person[i]){
+			document.write(person[i][k]+" ");
+		}
+		document.write("<br>");
+	}
+}
+*-*-*-*-*-*-*-*-*-*-*-*-*
+-> function types in JavaScript
+1. normal function
+- syntax
+function function_name(argument_list){
+	return value;
+}
+2. function expression
+- syntax 
+var variable_name=function function_name(argument_list){
+	return value;
+};
+-
+var variable_name=function(argument_list){
+	return value;
+};
+};
+3. arrow function 
+- syntax 
+var variable_name=function(argument_list){
+	return value;
+};
+- 
+var variable_name=(argument_list)=>{
+	return value;
+};
+- 
+var variable_name=(argument_list)=> {expression};
+-
+var variable_name=(argument_list)=> expression;
+-
+var variable_name=argument=> expression;
+4. Recursive Function
+- the function which is called ifself is called recursive function
+e.g
+function m1(k){
+	if(k!=0){
+		document.write("<br> K => "+k);
+		m1(--k);
+	}
+}
+m1(k);
+5. Default Parameters
+- Default function parameters allow named parameters to be initialized with default values if no value or undefined is passed.
+e.g
+function product(a,b=4){
+	var c=a*b;
+	document.write(" Result -> "+c);
+}
+product(4,6);
+product(7);
+product(8,undefined);
+6. Destructuring Array 
+- Destructuring Array means unpack the value from array and store into individual variable 
+- It is introduced in ES6 (ECMAScript 2015) and it provides a more readable and concise way to access data.
+- Destructuring is not destructive.
+- Destructuring does not change the original object.
+e.g 
+var colors=["Mango","Apple","Banana","Cherry","Orange","Lemon"];
+document.write("<br> "+colors);
+// destructuring assignment  
+var [color_1, color_2] = colors; 
+document.write("<br> "+color_1);
+//skipping element
+var [color_1,,color_3]=colors;
+document.write("<br> "+color_3);
+//
+var [color_1,color_4,color_2]=colors;
+document.write("<br> "+color_4);
+/* destructuring assignment on String */
+document.write("<br> ");
+var s1="i like yellow color";
+document.write("<br> "+s1);
+var [d1,d2]=s1;
+document.write("<br> "+d1);
+document.write("<br> "+d2);
+document.write("<br> ");
+var [d1,d2,,,d3]=s1;
+document.write("<br> "+d1);
+document.write("<br> "+d2);
+document.write("<br> "+d3);
+document.write("<br> ");
+function array_1(){
+	var arr=[10,30,20,15];
+	return arr;
+}
+var [b1,b2,b3]=array_1();
+document.write("<br> "+b1);
+document.write("<br> "+b3);
+7. Callback Function 
+
+
+*-*-*-*-*-*-*-*-*-*-*-*-*
+-> Objects is Java Script 
+
+a) Array 
+- it is collection of elements 
+- you can store many elements under one variable name
+- Array has index 
+- Array index starts from 0 
+- last_index = size_of_array - 1;
+- in Java Script Array you can store heterogenous elements
+- declaration of Array 
+1. var a=[];
+2. var b=new Array();
+3. var c=new Array(value1,value2,...);
+4. var d=[value1,value2,...];
+
+a) Instance Property Related to Array 
+1) constructor - it will return the reference of function and will not return any name of function
+-
+var a=new Array();
+document.write("<br> "+a);
+var b=a.constructor;
+document.write("<br> "+b);//function Array() { [native code] }
+var c=[];
+b=c.constructor;
+document.write("<br> "+b);//function Array() { [native code] }
+var d=new Array("Sky","Water","Fire");
+b=d.constructor;
+document.write("<br> "+b);//function Array() { [native code] }
+
+2) 
+- length - it will return the length (size) of Array 
+var a=new Array();
+var b=a.length;
+document.write("<br> "+b);//0
+var c=[];
+b=c.length;
+document.write("<br> "+b);//0
+var d=new Array("Sky","Water","Fire","Air","Soil");
+document.write("<br> "+d);//Sky,Water,Fire,Air,Soil
+b=d.length;
+document.write("<br> "+b);//5
+d.length=3;
+var e=d;
+document.write("<br> "+e);//Sky,Water,Fire
+
+b) static Method of Array 
+1) from() - it will create Array from Object with a length property and return an array from any iterable object.
+-
+var a="Java Script Programming Language";
+document.write("<br> "+a);
+document.write("<br> "+typeof a);
+var b=Array.from(a);
+document.write("<br> "+typeof b);
+document.write("<br> "+(b instanceof Array));
+
+2) isArray() - it will check the a particular Object is Array or not
+-
+var a="Java Script Programming Language";
+document.write("<br> "+Array.isArray(a));
+var b=[];
+document.write("<br> "+Array.isArray(b));
+var c=new Array();
+document.write("<br> "+Array.isArray(c));
+var d=new Array("Sky","Water","Fire","Air");
+document.write("<br> "+Array.isArray(d));
+
+3) of() - it will create an Array from number of arguments you pass.
+-
+var a=Array.of("Red","Green","Blue","Pink","Yellow");
+document.write("<br> "+a);
+document.write("<br> "+typeof a);
+document.write("<br> "+(a instanceof Array));
+
+c) Instance Method of Array 
+
+1) at() - it will element from Array of a particular index 
+-
+var a=new Array("Red","Green","Blue","Pink","Yellow");
+var t=a.at(4);//Yellow
+document.write("<br> "+t);
+t=a.at(41);//undefined
+document.write("<br> "+t);
+
+2) find() - Returns the value of the first element in an array that pass a test
+- it will return a value when element get first occurance 
+- it will return undefined when element not found
+
+-
+var a=new Array("Red","Green","Blue","Pink","Yellow");
+function checkElement(element){
+	return "Pink"==element;
+}
+document.write("<br> "+a.find(checkElement));
+
+var c=[44,11,77,33,-6,41,67];
+var b=c.find(function(element){
+	return element>=55;
+});
+document.write("<br> "+b);
+
+3) findIndex() - Returns the index of the first element in an array that pass a test
+- it will return index of element of first occurance 
+- it will return -1 if element not found
+
+-
+var a=new Array("Red","Green","Blue","Pink","Yellow");
+function checkElement(element){
+	return "Pink"==element;
+}
+document.write("<br> "+a.findIndex(checkElement));
+var c=[44,11,77,33,-6,41,67];
+var b=c.findIndex(function(element){
+	return element>=55;
+});
+document.write("<br> "+b);
+
+4) findLast() - Returns the value of the last element in an array that pass a test
+- it will return a value when element get last occurance 
+- it will return undefined when element not found
+
+-
+var a=new Array("Red","Green","Blue","Pink","Yellow");
+function checkElement(element){
+	return "Pink"==element;
+}
+document.write("<br> "+a.findLast(checkElement));
+var c=[44,11,77,33,-6,41,67];
+var b=c.findLast(function(element){
+	return element>=55;
+});
+document.write("<br> "+b);
+var h=c.findLast(element => element<44);
+document.write("<br> "+h);
+
+5) findLastIndex() - Returns the index of the last element in an array that pass a test
+- it will return index of element of last occurance 
+- it will return -1 if element not found
+
+-
+var a=new Array("Red","Green","Blue","Pink","Yellow");
+function checkElement(element){
+	return "Pink"==element;
+}
+document.write("<br> "+a.findLastIndex(checkElement));
+var c=[44,11,77,33,-6,41,67];
+var b=c.findLastIndex(function(element){
+	return element>=55;
+});
+document.write("<br> "+b);
+var h=c.findLastIndex(element => element<44);
+document.write("<br> "+h);
+
+6) forEach() - 
+- it will apply operation to each element of array that you assign to it.
+
+-
+var a=new Array("Red","Green","Blue","Pink","Yellow");
+function printArray(item,index){
+	document.write("<br> "+index+" --> "+item);
+}
+a.forEach(printArray);
+document.write("<br>");
+var c=[44,11,77,33,-6,41,67];
+c.forEach(function(item){
+	document.write(item+" ");
+});
+
+7) sort()
+- it will sort array element in ascending order
+
+-
+var a=new Array("Red","Green","Blue","Pink","Yellow");
+document.write("<br> Array Before Sorting");
+document.write("<br>");
+function printArray(item,index){
+	document.write(" "+item);
+}
+a.forEach(printArray);
+a.sort();
+document.write("<br> Array After Sorting");
+document.write("<br>");
+a.forEach(printArray);	
+
+8) reverse() 
+- it will reverse array element
+
+- 
+function printArray(item,index){
+	document.write(" "+item);
+}
+a.forEach(printArray);
+a.reverse();
+document.write("<br>");
+a.forEach(printArray);
+
+9) indexOf() 
+- it will return index of first occurance of element from Array
+- it will -1 if element does not found
+
+-
+var a=new Array("Red","Green","Blue","Pink","Yellow");
+var b=a.indexOf("Blue");
+document.write("<br> "+b);
+b=a.indexOf("White");
+document.write("<br> "+b);
+
+10) lastIndexOf()
+- it will return index of last occurance of element from Array
+- it will -1 if element does not found
+
+-
+var a=new Array("Red","Green","Blue","Pink","Yellow","While","Pink","Black","Orange");
+var b=a.lastIndexOf("Pink");
+document.write("<br> "+b);
+b=a.lastIndexOf("Indigo");
+document.write("<br> "+b);
+
+11) pop() 
+- it will remove last element from Array and return last element of Array
+
+-
+var a=new Array("Red","Green","Blue","Pink","Yellow","While","Pink","Black","Orange");
+var b=a.pop();
+document.write("<br> "+b);
+
+12) push()
+- it will add new element in Array and it will return length of Array
+
+-
+var a=new Array("Red","Green","Blue","Pink","Yellow");
+var b=a.push("Orange");
+document.write("<br> "+b);
+
+ 
+13) concat()
+- this Method is used to join 2 Array
+
+-
+var a=new Array("Red","Green","Blue");
+document.write("<br> "+a);
+var b=["Apple","Mango","Cherry"];
+document.write("<br> "+b);
+a=a.concat(b);
+document.write("<br> "+a); 
+
+14) toString()
+- this Method is used to convert Array into String
+
+-
+var a=new Array("Red","Green","Blue");
+document.write("<br> "+a);
+document.write("<br> "+(typeof a));
+var b=a.toString();
+document.write("<br> "+b);
+document.write("<br> "+(typeof b));
+
+15) every() 
+- this Method is used to check condition is true for each Array element.
+- it will return true if each fulfill the condition 
+- it will return false if each not fulfill the condition 
+
+-
+var a=new Array(33,55,11,77,88,-33);
+function testNumber(num){
+	return num%11==0;
+}
+var b=a.every(testNumber);
+document.write("<br> "+b);
+var c=a.every(function(num){
+	return num%2==0;	
+});
+document.write("<br> "+c);
+
+
+16) filter() - 
+- it will return new Array of those element which fulfill the condition
+
+- 
+var a=new Array(33,55,11,77,88,-33);
+function testNumber(num){
+	return num%3==0;
+}
+var b=a.filter(testNumber);
+document.write("<br> "+b);
+
+17) splice() -
+- it will add or remove element from Array
+
+-
+var a=new Array(33,55,11,77,88,-33);
+document.write("<br> "+a);
+a.splice(2,0,111,121);
+document.write("<br> "+a);
+a.splice(3,3);
+document.write("<br> "+a);
+
+18) shift() -
+- it will remove first element from Array
+
+- 
+var a=new Array(33,55,11,77,88,-33);
+document.write("<br> "+a);
+var b=a.shift();
+document.write("<br> "+b);
+document.write("<br> "+a);
+
+
+b) String
+- String is a group of Characters 
+- String is a sequence of Characters
+- String is a Character Array
+- in Java Script you can defined in double quotes or single quotes
+- 
+var a1="Mango is Fruit"; 
+var b1='Red is color';
+
+- Object 
+1. var a2="Cherry";
+- constructor of String
+2. var b2=new String("Orange");
+
+var a1="Mango is fruit";
+document.write("<br> "+a1);
+var b1=new String("Red is color");
+document.write("<br> "+b1);
+var a2='Cherry';
+document.write("<br> "+a2);
+
+-: empty String
+var t1="";
+var t2='';
+var t3=new String();
+document.write("<br> "+(typeof t3));
+document.write("<br> "+(t3 instanceof Object));		
+
+-: String concatenation
+var e1="Mango";
+var e2="it is a fruit";
+var e3=e1+" "+e2;
+document.write("<br> "+e3);
+var t1="I like Mango"+ "It is a nice fruit";
+document.write("<br> "+t1);
+
+-: Escape Characters
+var t1="I like 'Mango'. It is a nice fruit";
+document.write("<br> "+t1);
+var t2="Sky has a \'Blue\' color";
+document.write("<br> "+t2);
+var t3='Apple has a "Red" color';
+document.write("<br> "+t3);
+
+-: Instance Property
+1. length - it will no.of Character of String
+var h1="Mango is a fruit";
+document.write("<br> "+h1);
+document.write("<br> Length -> "+h1.length);
+
+2. constructor - Return the string constructor function for the object.
+var h1="Mango is a fruit";
+document.write("<br> "+h1);
+document.write("<br> "+(h1.constructor));
+
+-: static Method
+1. fromCharCode()
+- it will return the String of unicode.
+var v1=String.fromCharCode(66);
+document.write("<br> "+v1);
+
+var v2=String.fromCharCode(66,99,101,71,78);
+document.write("<br> "+v2);
+
+2. fromCodePoint()
+- it will return the String of unicode.
+var t2=String.fromCodePoint(65);
+document.write("<br> "+t2);
+var t3=String.fromCodePoint(65,99,79);
+document.write("<br> "+t3);
+
+-: Instance Method
+1) at() or charAt()-
+- it will return Character of specified index 
+
+-
+var k1="Mango is a fruit. It has Yellow color";
+document.write("<br> "+k1);
+var d1=k1.at(4);
+document.write("<br> "+d1);
+d1=k1.at(400);
+document.write("<br> "+d1);//undefined
+var d2=k1.charAt(12);
+document.write("<br> "+d2);
+d2=k1.at(400);
+document.write("<br> "+d2);//undefined
+
+2) charCodeAt() or codePointAt()
+- it will return unicode of Character of specified index 
+
+-
+var k1="Mango is a fruit. It has Yellow color";
+document.write("<br> "+k1);
+var d1=k1.charCodeAt(4);
+document.write("<br> "+d1);
+d1=k1.charCodeAt(400);
+document.write("<br> "+d1);//NaN
+var d2=k1.codePointAt(12);
+document.write("<br> "+d2);
+d2=k1.codePointAt(400);
+document.write("<br> "+d2);//undefined
+
+3) concat()
+- it will concat 2 String 
+
+-
+var k1="Mango is a fruit.";
+document.write("<br> "+k1);
+var d1="It has Yellow color";
+document.write("<br> "+d1);
+var h1=k1.concat(d1);
+document.write("<br> "+h1);
+
+4) toUpperCase()
+- it will convert String into upper case Character
+
+-
+var k1="Mango is a fruit.";
+document.write("<br> "+k1);
+var t2=k1.toUpperCase();
+document.write("<br> "+t2);
+
+5) toLowerCase()
+- it will convert String into lower case Character
+
+-
+var k1="Mango Is a Fruit.";
+document.write("<br> "+k1);
+var t2=k1.toLowerCase();
+document.write("<br> "+t2);
+		
+6) replace()
+- it will replace the String and Character 
+
+-
+var k1="Mango Is a Fruit.";
+document.write("<br> "+k1);
+var t2=k1.replace("Mango","Apple");
+document.write("<br> "+t2);
+var k2="Java Script is Scripting Language";
+document.write("<br> "+k2);
+var t2=k2.replace('a','T');
+document.write("<br> "+t2);
+
+7) endsWith() - 
+- it will return true if given String ends with particular String otherwise return false
+
+-
+var d1="Mango is a fruit. It has Yellow color";
+var d2=d1.endsWith("color");
+document.write("<br> "+d2);
+d2=d1.endsWith("Color");
+document.write("<br> "+d2);
+
+8) startsWith()
+- it will return true if given String starts with particular String otherwise return false
+
+-
+var d1="Mango is a fruit. It has Yellow color";
+var d3=d1.startsWith("Mango");
+document.write("<br> "+d3);
+d3=d1.startsWith("mango");
+document.write("<br> "+d3);
+
+9) substr() / substring()
+- it will return string from specified index 
+
+-
+var d1="I like Mango and Apple";
+document.write("<br> "+d1);
+var d2=d1.substr(4);
+document.write("<br> "+d2);
+d2=d1.substr(4,10);	//last index-1
+document.write("<br> "+d2);
+d2=d1.substring(6);
+document.write("<br> "+d2);
+d2=d1.substring(6,15);//last index-1
+document.write("<br> "+d2);
+
+10) trim() 
+- it will remove space starting and ending spaces of String
+
+-
+var d1=" I like Mango and Apple ";
+document.write("<br> "+d1);
+var k1=d1.length;
+document.write("<br> "+k1);
+var d2=d1.trim();
+document.write("<br> "+d2);
+k1=d2.length;
+document.write("<br> "+k1);
+
+11) split()
+- it will split a String as given Pattern and return into String Array
+
+-
+var d1="I like Mango and Apple";
+var k1=d1.split(" ");
+document.write("<br> "+d1);
+document.write("<br> "+k1);
+k1=d1.split(" ",3);
+document.write("<br> "+k1);
+
+12) trimEnd()
+- it will remove spaces from end of String. 
+
+-
+var d1=" I like Mango and Apple ";
+document.write("<br> "+d1);
+var k1=d1.length;
+document.write("<br> "+k1);
+var w1=d1.trimEnd();
+document.write("<br> "+w1);
+k1=w1.length;
+document.write("<br> "+k1);
+
+13) trimStart() 
+- it will remove spaces from start of String
+
+-
+var d1=" I like Mango and Apple ";
+document.write("<br> "+d1);
+var k1=d1.length;
+document.write("<br> "+k1);
+var w1=d1.trimStart();
+document.write("<br> "+w1);
+k1=w1.length;
+document.write("<br> "+k1);
+
+14) includes()
+- includes() returns true if a string contains a specified string.
+
+-
+var d1="I like Mango and Apple";
+document.write("<br> "+d1);
+var h1=d1.includes("Mango");
+document.write("<br> "+h1);
+h1=d1.includes("mango");
+document.write("<br> "+h1);
+
+15) padEnd()
+- The padStart() method pads a string from the start.
+- It pads the string with another string (multiple times) until it reaches a given length.
+
+-
+var h1="Mango";
+var h2=h1.padEnd(10,"fruit");
+document.write("<br> "+h1);
+document.write("<br> "+h2);
+var d1=5;
+var d2=d1.padEnd(6,4);//d1.padEnd is not a function
+document.write("<br> "+d1);
+//document.write("<br> "+d2);
+
+16) padStart()
+- The padStart() method pads a string from the start.
+- It pads the string with another string (multiple times) until it reaches a given length.
+
+-
+var h1="Mango";
+var h2=h1.padStart(10,"fruit");
+document.write("<br> "+h1);
+document.write("<br> "+h2);
+
+17) repeat() 
+- it will repeat the String no.of times.
+
+-
+var h1="Mango is a fruit.";
+document.write("<br> "+h1);
+var h2=h1.repeat(4);
+document.write("<br> "+h2);	 
+
+c) Date 
+- Object
+1. var d1=new Date();
+document.write("<br> "+d1);
+
+2. var d1=new Date(value);
+- value: This value is the number of milliseconds since January 1, 1970, 00:00:00 UTC.
+-
+var d1=new Date(30000);
+document.write("<br> "+d1);
+
+3. var d1=new Date(date_string);
+- This represents a date format. 
+-
+var d1 =new Date('May 22, 2001 06:49:45');
+document.write("<br> "+d1);
+
+4. var d1=new Date(year, month, day, hours, minutes, seconds, milliseconds);
+- year: This is represented by integer values ranging from the years 1900 to 1999.
+- month: This is represented by integer values ranging from 0 for January to 11 for December.
+- day: This is an optional parameter. This is represented by an integer value for the day of the month.
+- hours: This is optional. This is represented by an integer value for the hour of the day.
+- minutes: This is optional. This is represented by an integer value for the minute of a time.
+- seconds: This is optional. This is represented by an integer value for the second of a time.
+- milliseconds: This is optional. This is represented by an integer value for the millisecond of a time.
+
+-
+var d1=new Date(2021, 9, 24, 9, 50, 42);
+document.write("<br> "+d1);
+
+-
+var d1=new Date(dfd);	// dfd is not defined
+document.write("<br> "+d1);
+
+-
+var d1=new Date(5+4i);	//Invalid or unexpected token
+document.write("<br> "+d1);
+
+-
+var d1=new Date("date");	//Invalid Date
+document.write("<br> "+d1);
+
+- constructor
+var d1=new Date();	
+var d2 = d1.constructor;
+document.write("<br> "+d1);
+document.write("<br> "+d2);
+
+-: static Method
+1. now()
+- Return the number of milliseconds elapsed since January 1, 1970, 00:00:00 UTC. 
+-
+var d1=Date.now();
+document.write("<br> "+d1);
+
+2. parse()
+- Return the time difference in milliseconds from, January 1, 1970, till the date we provide.
+-
+var d1=Date.parse("August 20, 2022");
+document.write("<br> "+d1);
+
+3. UTC()
+- Return the number of milliseconds in a Date object since January 1, 1970, 00:00:00, universal time
+-
+var d1=Date.UTC(2020,03,23);
+document.write("<br> "+d1);
+
+-: Instance Method
+1. getDate() or getUTCDate()
+- it will return date of Date Object -(1 to 31)
+-
+var d1=new Date();
+document.write("<br> "+d1);
+var d2=d1.getDate();
+document.write("<br> "+d2);	
+
+2. getDay() or getUTCDay()
+- it will day number of Date Object -(0 to 6);
+-
+let name_of_day=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+var d1=new Date();
+document.write("<br> "+d1);
+var d2=d1.getDay();
+document.write("<br> "+d2);		
+var d3=name_of_day[d2];
+document.write("<br> "+d3);			
+
+3. getFullYear() or getUTCFullYear()
+- it will return full year of Date Object
+-
+var d1=new Date();
+document.write("<br> "+d1);
+var d2=d1.getFullYear();
+document.write("<br> "+d2);		
+
+4. getHours() or getUTCHours()
+- it will return hours of Date Object - (0 to 23);
+-
+var d1=new Date();
+document.write("<br> "+d1);
+var d2=d1.getHours();
+document.write("<br> "+d2);	
+
+5. getMilliseconds() or getUTCMilliseconds()
+- it will return millisecond of Date Object - (0 to 999);
+-
+var d1=new Date();
+document.write("<br> "+d1);
+var d2=d1.getMilliseconds();
+document.write("<br> "+d2);	
+
+6. getMinutes() or getUTCMinutes()
+- it will return minutes of Date Object - (0 to 59);
+-
+var d1=new Date();
+document.write("<br> "+d1);
+var d2=d1.getMinutes();
+document.write("<br> "+d2);	
+
+7. getSeconds() or getUTCSeconds()
+-  it will return seconds of Date Object - (0 to 59);	
+-
+var d1=new Date();
+document.write("<br> "+d1);
+var d2=d1.getSeconds();
+document.write("<br> "+d2);	
+
+8. getMonth() or getUTCMonth()
+- - it will month number of Date Object -(0 to 11);
+-
+let name_of_month=["January","February","March","April","May","June","July","August","September","October","November","December"]; 
+var d1=new Date();
+document.write("<br> "+d1);
+var d2=d1.getMonth();
+document.write("<br> "+d2);		
+var d3=name_of_month[d2];
+document.write("<br> "+d3);	
+
+9. getTime()
+- it will return the number of milliseconds since January 1, 1970 00:00:00.
+-
+var d1=new Date();
+document.write("<br> "+d1);
+var d2=d1.getTime();
+document.write("<br> "+d2);	
+
+10. getTimezoneOffset() 
+- it will return difference between UTC time and local time.
+- it will return returns the difference in minutes.
+-
+var d1=new Date();
+document.write("<br> "+d1);
+var d2=d1.getTimezoneOffset();
+document.write("<br> "+d2);			
+
+-: UTC - Coordinated Universal Time
+-: GMT - Greenwich Mean Time	
+
+11.  setDate() or setUTCDate()
+- it will set date to the Date Object 
+
+- 
+var d1=new Date();
+document.write("<br> "+d1);
+d1.setDate(5);
+document.write("<br> "+d1);
+
+12. setFullYear() or setUTCFullYear()
+- it will set year of date;
+- you can also set year, month and date.
+
+-
+var d1=new Date();
+document.write("<br> "+d1);
+d1.setFullYear(2023);//set year
+document.write("<br> "+d1);
+d1.setFullYear(2023, 10);//set month
+document.write("<br> "+d1);
+d1.setFullYear(2023,09,25);//set date
+document.write("<br> "+d1);
+
+13. setMonth() or setUTCMonth()
+- it will set month of Date
+- 
+var d1=new Date();
+document.write("<br> "+d1);
+d1.setMonth(5);
+document.write("<br> "+d1);
+
+14. setHours() or setUTCHours()
+- it will set hours of Date Object
+- you can minutes and seconds also.
+-
+var d1=new Date();
+document.write("<br> "+d1);
+d1.setHours(04);//set hours
+document.write("<br> "+d1);
+d1.setHours(04,23);//set minutes
+document.write("<br> "+d1);
+d1.setHours(04,23,45);//set seconds
+document.write("<br> "+d1);
+
+15. setMinutes() or setUTCMinutes()
+- it will set minutes of Date Object 
+-
+var d1=new Date();
+document.write("<br> "+d1);
+d1.setMinutes(35);
+document.write("<br> "+d1);
+
+16. setSeconds() or setUTCSeconds()
+- it will set seconds of Date Object
+- 
+var d1=new Date();
+document.write("<br> "+d1);
+d1.setSeconds(56);
+document.write("<br> "+d1);
+
+17. setMilliseconds() or setUTCMilliseconds()
+- it will set millisecond of Date Object 
+-
+var d1=new Date();
+document.write("<br> "+d1);
+d1.setMilliseconds(45);
+document.write("<br> "+d1);
+
+18. setTime()
+- it will add millisecond to January 1, 1970:
+-
+var d1=new Date();
+document.write("<br> "+d1);
+d1.setTime(1234567890);
+document.write("<br> "+d1);
+
+19. 
+- it will return number of milliseconds between a date and January 1, 1970:
+-
+var d1=Date.UTC(2020, 02, 30);
+document.write("<br> "+d1);
+d1=Date.UTC(2020);
+document.write("<br> "+d1);
+d1=Date.UTC(2020,04);
+document.write("<br> "+d1);
+d1=Date.UTC();
+document.write("<br> "+d1);
+
+20. valueOf()
+- it will return the primitive value of a date object.
+- The primitive value is return as the number of millisecond since midnight January 1, 1970 UTC.
+- 
+var d1=new Date();
+document.write("<br> "+d1);
+var d2=d1.valueOf();
+document.write("<br> "+d2);
+
+21. toLocaleDateString()
+- it will return date from Date Object
+-
+var d1=new Date();
+document.write("<br> "+d1);
+var d2=d1.toLocaleDateString();
+document.write("<br> "+d2);
+
+22. toLocaleTimeString()
+- it will return time from Date Object 
+-
+var d1=new Date();
+document.write("<br> "+d1);
+var d2=d1.toLocaleTimeString();
+document.write("<br> "+d2);
+
+23. toLocaleString()
+-
+-
+var d1=new Date();
+document.write("<br> "+d1);
+document.write("<br> "+typeof d1);
+var d2=d1.toLocaleString();
+document.write("<br> "+d2);
+document.write("<br> "+typeof d2);
+
+24. toDateString()
+- it will return Date Object in readable format
+-
+var d1=new Date();
+document.write("<br> "+d1);
+document.write("<br> "+typeof d1);
+var d2=d1.toDateString();
+document.write("<br> "+d2);
+document.write("<br> "+typeof d2);
+
+25. toJSON()
+- it will convert Date Object into String
+-
+var d1=new Date();
+document.write("<br> "+d1);
+document.write("<br> "+typeof d1);
+var d2=d1.toJSON();
+document.write("<br> "+d2);
+document.write("<br> "+typeof d2);
+
+-: Number
+- Object 
+var d1=new Number(5);
+document.write(d1);
+
+- static properties
+1. EPSILON
+- it will return the difference between the smallest floating point number greater than 1 and 1.
+-
+var d1=Number.EPSILON;
+document.write(d1);
+
+2. MAX_SAFE_INTEGER
+-  represents the maximum safe integer in JavaScript.
+-  maximum safe integer (25^3 - 1).
+-
+var d1=Number.MAX_SAFE_INTEGER;
+document.write(d1);
+
+3. MIN_SAFE_INTEGER
+-  represents the minimum safe integer in JavaScript.
+-  minimum safe integer -(25^3 - 1).
+-
+var d1=Number.MIN_SAFE_INTEGER;
+document.write(d1);
+
+4. MAX_VALUE
+- it will return the largest number possible in JavaScript.
+-
+var d1=Number.MAX_VALUE;
+document.write(d1);
+
+5. MIN_VALUE
+- it will return the smallest number possible in JavaScript.
+-
+var d1=Number.MIN_VALUE;
+document.write(d1);
+
+6. NaN
+- NaN is short for "Not-a-Number".
+- NaN is a number that is not a legal number.
+- The Global NaN property is the same as the Number.Nan property.
+-
+var d1=Number.NaN;
+document.write(d1);
+
+7. NEGATIVE_INFINITY
+- it will return negative infinity.
+- the number is "a number lower than any other number".
+-
+- var d1=Number.NEGATIVE_INFINITY;
+document.write(d1);
+
+8. POSITIVE_INFINITY
+- it will return positive infinity.
+- the number is "a number lower than any other number".
+-
+var d1=Number.POSITIVE_INFINITY;
+document.write(d1);
+
+-: constructor 
+- 
+var d1=Number.constructor;
+document.write(d1);
+
+-: static Method
+1. isNaN() 
+- it will check the number is NaN or not
+-
+var d2=Number.isNaN(12/2);
+document.write("<br> "+d2);//false
+var d3=Number.isNaN(12/0);
+document.write("<br> "+d3);//false
+var d4=Number.isNaN(0/12);
+document.write("<br> "+d4);//false
+var d5=Number.isNaN(0/0);
+document.write("<br> "+d5);//true
+var d6=Number.isNaN("Rice");
+document.write("<br> "+d6);//false
+var d7=Number.isNaN('2024/02/12');
+document.write("<br> "+d7);//false
+
+2. isInteger()
+- it will return true if value is integer of Number data type
+-
+var d1=Number.isInteger(478);
+document.write("<br> "+d1);//true
+var d2=Number.isInteger(-478);
+document.write("<br> "+d2);//true
+var d3=Number.isInteger(4-1);
+document.write("<br> "+d3);//true
+var d4=Number.isInteger('421');
+document.write("<br> "+d4);//false
+var d5=Number.isInteger(4+6);
+document.write("<br> "+d5);//true
+var d6=Number.isInteger(4*6);
+document.write("<br> "+d6);//true
+var d7=Number.isInteger(4/6);
+document.write("<br> "+d7);//false
+var d8=Number.isInteger(4%6);
+document.write("<br> "+d8);//true
+
+3. isFinite()
+- it will return true if a number is a finite number.
+- 
+var d1=Number.isFinite(345);
+document.write("<br> "+d1);
+var d2=Number.isFinite("345");
+document.write("<br> "+d2);
+
+4. isSafeInteger()
+- it will return true if a number is a safe integer.
+-
+var d1=Number.isSafeInteger(5);
+document.write("<br> "+d1);
+var d2=Number.isSafeInteger('5');
+document.write("<br> "+d2);
+
+5. parseFloat()
+- this method convert string into a floating-point number
+-
+var d1=Number.parseFloat(33);
+document.write("<br> "+d1);
+var d2=Number.parseFloat(33.66);
+document.write("<br> "+d2);
+var d3=Number.parseFloat("33.66");
+document.write("<br> "+d3);
+var d4=Number.parseFloat("33 44 11");
+document.write("<br> "+d4);
+var d5=Number.parseFloat("price 33");
+document.write("<br> "+d5);
+var d6=Number.parseFloat("33 price");
+document.write("<br> "+d6);
+var d7=Number.parseFloat(" 33 ");
+document.write("<br> "+d7);
+var d8=Number.parseFloat(" 33A ");
+document.write("<br> "+d8);
+var d9=Number.parseFloat(" A33 ");
+document.write("<br> "+d9);
+
+6. parseInt()
+- this method convert String into Integer
+-
+var d1=Number.parseInt(444);
+document.write("<br> "+d1);
+var d2=Number.parseInt("444");
+document.write("<br> "+d2);
+var d3=Number.parseInt("33.11");
+document.write("<br> "+d3);
+var d4=Number.parseInt("12 55 60");
+document.write("<br> "+d4);
+var d5=Number.parseInt(" 200 ");
+document.write("<br> "+d5);
+var d6=Number.parseInt("Hello 400");
+document.write("<br> "+d6);//NaN
+var d7=Number.parseInt("300 Hello");
+document.write("<br> "+d7);
+var d8=Number.parseInt("504",10);
+document.write("<br> "+d8);
+var d9=Number.parseInt("010");
+document.write("<br> "+d9);
+var d10=Number.parseInt("101",8);
+document.write("<br> "+d10);
+var d11=Number.parseInt("0xface");
+document.write("<br> "+d11);
+var d12=Number.parseInt("1201",16);
+document.write("<br> "+d12);
+var d13=Number.parseInt("010111",2);
+document.write("<br> "+d13);
+
+-: Instance Method
+1. toExponential()
+- this method converts a number into an exponential notation
+-
+var k1=3.1341;
+var w1=k1.toExponential();
+document.write("<br> "+k1);
+document.write("<br> "+w1);
+var h1=k1.toExponential(7);
+document.write("<br> "+h1);
+
+2. toFixed()
+- this Method is used to converts a number to a string, rounded to a specified number of decimals:
+-
+var k1=3.1341;
+var w1=k1.toFixed();
+document.write("<br> "+k1);
+document.write("<br> "+w1);
+var h1=k1.toFixed(6);
+document.write("<br> "+h1);
+
+3. toLocaleString()
+- this Method return a number as a string, using local language format.
+- 
+var w1=4000000;
+document.write("<br> "+w1);
+var w2=w1.toLocaleString();
+document.write("<br> "+w2);
+var d1=w1.toLocaleString("en-IN");
+document.write("<br> "+d1);
+var d3=w1.toLocaleString("en-US");
+document.write("<br> "+d3);
+var h1=w1.toLocaleString("en-IN",{style:"currency",currency:"INR"});
+document.write("<br> "+h1);
+var h2=w1.toLocaleString("en-US", {style:"currency", currency:"USD"});
+document.write("<br> "+h2);
+
+4. toPrecision();
+- this Method formats a number to a specified length
+- 
+var w1=2463.541869;
+document.write("<br> "+w1);
+var a1=w1.toPrecision(3);
+document.write("<br> "+a1);
+var a2=w1.toPrecision(6);
+document.write("<br> "+a2);
+
+5. toString()
+- this Method convert Number into String
+-
+var w1=246317;
+document.write("<br> "+w1);
+var d1=w1.toString();
+document.write("<br> "+d1);
+var d2=w1.toString(2);//binary number
+document.write("<br> "+d2);
+var d3=w1.toString(8);//octal number
+document.write("<br> "+d3);
+var d4=w1.toString(16);//hexa decimal number
+document.write("<br> "+d4);
+
+6. valueOf()
+- this Method return primitive value of Number 
+-
+var w1=246317;
+document.write("<br> "+w1);
+var d1=w1.valueOf();
+document.write("<br> "+d1);
+
+-: ways to attach java Script code 
+1. internal 
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Test Porgram</title>
+	<script type="text/javascript">
+		// internal java script code 
+		document.write("<br> This is java script programming. Internal Java Script");
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
+
+2. external 
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Test Porgram</title>
+	<script type="text/javascript" src="Test_program.js">
+		// external java script code 
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
+- extension of Java Script file is .js
+document.write("<br> External Java Script File");
+
+*-*-*-*-*-*-*-*-*-*
+- window
+	- document
+		- 
+	- Browser Object Model 
+		- navigator 
+		- screen 
+		- location
+		- frames 
+		- history 
+		- XMLHttpRequest 
+	- Java Script 
+		- Object 
+		- Array 
+		- function
+		- Date 
+		- String
+- window is called root object 
+
+-: DOM - Document Object Model
+- When an HTML document is loaded into a web browser, it becomes a document object.
+- The document object is the root node of the HTML document.
+- The document object is a property of the window object.
+- By DOM you can create dynamic HTML page 
+- It is a programming interface that allows us to create, change, or remove elements from the document.
+- By this interface you can do following things
+1. you can access, create, delete and replace the element of HTML
+2. you can change, add CSS attributes to HTML 
+3. you can add event to HTML element 
+
+- Tpyes of DOM
+1. Core DOM - standard model for all document types
+2. XML DOM - standard model for XML documents
+3. HTML DOM - standard model for HTML documents
+
+- by following way to access document 
+1. window.document
+	- window.document.method_name();
+2. document
+	- document.method_name();
+
+- methods of DOM 
+1. getElementById() 
+	- returns the element having the given id value.
+2. getElementsByClassName() 
+	- returns all the elements having the given class name.
+3. getElementsByName() 
+	- returns all the elements having the given name value.
+4. getElementsByTagName() 
+	- returns all the elements having the given tag name.
+5. querySelector() 
+6. querySelectorAll() 
+7. write() 
+	- Writes the given string on the document.
+
+-: BOM - Browser Object Model 
+	
+-: event in java script 
+- it is interaction of user and HTML page by some action 
+- Loading browser - is an event , clicking a mouse is an event, pressing key of keyword is an event, etc. 
+- event is a part of DOM - document object model 
+- these event used by programmer to execute a java script code as per response 
+- types of event
+1. mouse event 
+	- onmouseover -: When the cursor of the mouse comes over the element
+	- onmouseout -:	When the cursor of the mouse leaves an element
+	- onmousedown -: When the mouse button is pressed over the element
+	- onmouseup	-: When the mouse button is released over the element
+	- onmousemove -: When the mouse movement takes place.
+	- onmouseenter -: 
+	- onmouseleave -: 
+	- onmousewheel -: 
+		- deltaY - value of Y axis
+		- deltaX - value of X axis 
+		- deltaZ - value of Z axis 
+2. keyword event 
+	- onkeydown -: 
+		it will recognized non character keys also. 
+		When a key on the keyboard is pressed down, it triggers the keydown event.
+	- onkeypress -: 
+		it will not recognized non character keys also.
+		The keypress event triggers when a user types an actual character. 
+		Non-character keys, such as Shift or Ctrl, do not activate this event.
+	- onkeyup -: 
+		Upon the release of a previously pressed key, the system initiates the firing of a keyup event;
+3. click event 
+	- onclick()
+	- ondblclick();
+	- oncontextmenu();	- event.preventDefault();
+4. form event
+	- onsubmit
+	- onfocus
+	- onblur
+	- onchange 
+	- onload
+	- onunload
+
+-: event listener 
+- The addEventListener() method is an inbuilt function of JavaScript.
+- The addEventListener() method is used to attach an event handler to a HTML document.
+- syntax 
+element.addEventListener(event, listener, useCapture);
+- event: event can be any valid JavaScript event. Events are used without “on” prefixes like using “click” instead of “onclick” or “mousedown” instead of “onmousedown”.
+- listener(handler function): It can be a JavaScript function that responds to the event occurring.
+- useCapture: It is an optional parameter used to control event propagation. A boolean value is passed where “true” denotes the capturing phase and “false” denotes the bubbling phase.
+
+
+-: Cordinates in Java Script
+1. Screen → Full monitor screen (screen X / Y ) - The position will always be relative to the physical viewport.
+2. Client → Browser viewport client (client X / Y )- If you click in the upper left corner, the value will always be (0,0) regardless of the `scroll position`.
+3. Document → Full document / page (page X / Y ) - Note that the `pageX / pageY` event is the` UIEvent` object [not standardized] [1].
+
+-> BOM 
+- The Browser Object Model (BOM) is used to interact with the browser.
+- the default object of Browser is window - means all function call by window
+- window
+	- document
+	- history
+	- screen
+	- navigator 
+	- location 
+- Method of window object 
+1. alert()
+2. confirm()
+3. prompt()
+4. open()
+5. close()
+6. setTimeout()
+
+-: Timing Events
+- The window object allows execution of code at specified time intervals.
+- These time intervals are called timing events.
+- Method of Timing Events
+a) setTimeout(function, milliseconds)
+	- Executes a function, after waiting a specified number of milliseconds.
+e.g 
+function printNumber(){
+	document.write("<br> Apple Fruit ");
+}
+<button type="button" name="button1" id="button_1" onclick="setTimeout(printNumber,4000)">Click</button>
+
+b) setInterval(function, milliseconds)
+	- Same as setTimeout(), but repeats the execution of the function continuously.
+e.g 
+function print(){
+	document.write("<br> Mango Color ");
+}
+setInterval(print,1000);
+
+- The setTimeout() and setInterval() are both methods of the HTML DOM Window object.
+
+c) clearInterval()
+- The clearInterval() method clears a timer set with the setInterval() method.
+e.g
+function printDate(){
+	var date=new Date();
+	document.getElementById("times").innerHTML=date.toLocaleTimeString();
+}
+var my_time=setInterval(printDate,1000);
+function stopTime(){
+	clearInterval(my_time);
+}
+<div id="times"></div>
+<br>
+<button type="button" name="stoptime" id="stop_time" onclick="stopTime()">Stop Time</button>
+
+d) clearTimeout()
+
+
+- history
+1. back()
+	- window.history.back();
+2. forward()
+	- window.history.forward();
+3. length
+	- var len=window.history.length;
+	
+-: Linked List
+- it is a linear data structure 
+- it is a data structure that contain element or data in a sequence and where each element contain address or reference of next element
+- the first element of link list called as head element 
+- the last element of link list is called as tail element 
+- each element called as node 
+- each node has 2 parts 
+	1. data - where you can store a data 
+	2. pointer or link - where you can store a address or reference of next element or node 
+- last node reference is null 
+
+-: Map 
+- The map is used to store a data into key and value pair format.
+- that pair is called entry, so map is the collection of entries
+- it preserves the original insertion order.
+- It supports any datavalue(values), including objects and primitives, as keys or values.
+- create object 
+	a) var map_1=new Map();
+	b) var map_2=new Map([
+		[key_1,value_1],[key_2,value_2],[key_3,value_3]
+	]);
+
+- methods of Map 
+a) set();
+- it is used to put data into map
+- syntax 
+map_object.set(key,value);
+
+b) get()
+- it will return value of key 
+- syntax 
+value map_object.get(key);
+
+c) instanceof operator 
+- document.write("<br> "+(map_1 instanceof Map))
+
+d) typeof operator 
+- var o1=typeof map_2;
+document.write("<br> "+o1);
+
+e) size
+- it is used to get size of map.
+- it will return no.of 
+
+f) clear()
+- it is used remove all data from map;
+- syntax 
+map_object.clear();
+var len=map_2.size;
+document.write("<br> "+len);
+map_2.clear();
+len=map_2.size;
+document.write("<br> "+len);
+
+g) delete()
+- it is used to delete element by key 
+- it will return boolean value 
+- syntax 
+boolean map_object.delete();
+var map_1=new Map();
+var map_2=new Map([
+	[100,"Mango"],[400,"Apple"],[300,"Banana"],["Pink",false],[33.11,"Yellow"],["Black",5000]
+]);
+printMap(map_2);
+var val=map_2.delete(300);
+document.write("<br> ");
+document.write("<br> "+val);
+document.write("<br> ");
+printMap(map_2); 	
+function printMap(map){
+	for (var x of map_2.keys()) {
+	  document.write("<br> "+map_2.get(x));
+	}
+}
+
+h) entries();
+- it will return entries from map
+- the entry will contain key and value 
+- syntax 
+var map_2=new Map([
+	[100,"Mango"],[400,"Apple"],[300,"Banana"],["Pink",false],[33.11,"Yellow"],["Black",5000]
+]);
+printMap(map_2);
+function printMap(map){
+	for (var x of map_2.entries()) {
+	  document.write("<br> "+x);
+	}
+}
+
+i) forEach()
+- this method invokes a callback for each key/value pair in a Map
+- syntax 
+var map_1=new Map();
+var map_2=new Map([
+	[100,"Mango"],[400,"Apple"],[300,"Banana"],["Pink",false],[33.11,"Yellow"],["Black",5000]
+]);
+map_2.forEach(function (value,key){
+	document.write("<br> Key -> "+key+", Value -> "+value);
+})
+
+j) has()
+- this method returns true if a key exists in a map.
+- syntax 
+boolean map_object.has(key);
+var map_1=new Map();
+var map_2=new Map([
+	[100,"Mango"],[400,"Apple"],[300,"Banana"],["Pink",false],[33.11,"Yellow"],["Black",5000]
+]);
+var v1=map_2.has(300);
+document.write("<br> "+v1);
+v1=map_2.has("water");
+document.write("<br> "+v1);
+
+k) keys()
+- this method returns an iterator object with the keys in a map
+- it will not change the key in map
+- syntax 
+object map_object.keys();
+var map_1=new Map();
+var map_2=new Map([
+	[100,"Mango"],[400,"Apple"],[300,"Banana"],["Pink",false],[33.11,"Yellow"],["Black",5000]
+]);
+var k=map_2.keys();
+document.write("<br> "+k);
+for(var h of k){
+	document.write("<br> "+h);
+}
+
+l) values()
+- this method returns an iterator object with the values in a map.
+- it will not change the value in map;
+- syntax 
+object map_object.values();
+var map_1=new Map();
+var map_2=new Map([
+	[100,"Mango"],[400,"Apple"],[300,"Banana"],["Pink",false],[33.11,"Yellow"],["Black",5000]
+]);
+var k=map_2.values();
+document.write("<br> "+k);
+for(var h of k){
+	document.write("<br> "+h);
+}
+
+m) groupBy()
+- 
+
+-: Stack 
+- it is comes linear(sequential) data structure 
+- it is a part of data structure where you add element and remove element by a spcific order 
+- the orders of stack are
+a) First In Last Out (FILO)
+b) Last In First Out (LIFO)
+- by using these orders you can not add or remove element from middle 
+- by using following function used for stack 
+1. Push: Adds a new element on the stack.
+
+2. Pop: Removes and returns the top element from the stack.
+
+3. Peek: Returns the top element on the stack.
+
+4. isEmpty: Checks if the stack is empty.
+
+5. Size: Finds the number of elements in the stack.
+
+-: Queue 
+
+-: Hashing 
+
+-: Regular Expression 
+
+-: CSS apply 
+
+-: Local Storage
+
+-: Cookies

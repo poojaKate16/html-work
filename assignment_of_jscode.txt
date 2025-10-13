@@ -1,0 +1,80 @@
+-> Number Programs 
+
+1. write a program to check number is even or not 
+2. write a program to check number is odd or not 
+3. write a program to check number is divisible 3 or not 
+4. write a program to check number is divisible 4 and 7 or not 
+5. write a program to print message for following condition 
+	- if number divisible by 3 - print "Mango"
+	- if number divisible by 5 - print "Apple"
+	- if number divisible by 3 and 5 - print "Mango and Apple"
+	- otherwise print number 
+6. write a program to check number is prime number or not 
+7. write a program to print each digit of number 
+8. write a program to print sum of each digit of number 
+9. write a program to print product of each digit of number 
+10. write a program to print factorial of number
+11. write a program to print number in reverse
+12. write a program to check number is palindrome or not 
+13. write a program to check number is Armstrong number or not 
+14. write a program to min number from 3 int numbers 
+15. write a program to max number from 3 int numbers 
+16. write a program of given table.
+17. write a program to convert temperature Celsius to Fahrenheit
+18. write a program to convert seconds into hours, minutes and seconds
+19. write a program to count no. of digit of number
+20. write a program to count prime number from 1 to 100
+
+-> String Programs
+
+1. write a program to accept String an display it.
+2. write a program to print String in reverse
+3. write a program to check String is Palindrome or not
+4. write a program to count white space in String 
+5. write a program to count vowels in String
+6. write a program to check String is anagram or not 
+7. write a program to convert String from lower case to upper case 
+8. write a program to convert String from upper case to lower case
+9. write a program to count words in String 
+10. write a program to find a sub String in given String
+
+-> Array Programs
+
+1. write a program to accept value in array and show value of array (int and String)
+2. write a program to print only even number from array 
+3. write a program to print only odd number from array 
+4. write a program to array accept only even number in array 
+5. write a program to array accept only odd number in array 
+6. write a program to print sum of array elements 
+7. write a program to print average of array elements 
+8. write a program to print array in reverse 
+9. write a program to print product of array elements 
+10. write a program to sort array in descending order
+11. write a program to sort array in ascending order
+12. write a program to print max number from array
+13. write a program to print min number from array
+14. write a program to print 2nd max number from array
+15. write a program to print 2nd min number from array
+
+-> Collection Programs
+
+1. write a program to print elements from arraylist
+2. write a program to print max element from arraylist 
+3. write a program to print min element from arraylist 
+4. write a program to print sum of arraylist elements
+5. write a program to print product of arraylist elements
+6. write a program to print average of arraylist elements
+7. write a program to print arraylist in descending order
+8. write a program to print arraylist in ascending order
+9. write a program to print 2nd max number from arraylist
+10. write a program to print 2nd min number from arraylist
+11. write a program to remove duplicate elements from arraylist
+12. write a program to print arraylist in reverse
+13. write a program to print treeset in descending order
+14. write a program to print treeset in ascending order
+15. write a program to print treemap in ascending order
+16. write a program to print treemap in descending order
+17. write a program to print elements from linkedlist
+18. write a program to print elements from hashset
+19. write a program to print elements from hashmap
+20. write a program to print elements from hashtable or properties
